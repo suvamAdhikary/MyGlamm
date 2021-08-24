@@ -4,7 +4,7 @@
             name: "MYGLAMM SUPERFOODS ONION & MORINGA SHAMPOO",
             description: "For Hair Fall Control",
             price: "299",
-            images: ["https://files.myglamm.com/site-images/800x800/Product-1.jpg", "https://files.myglamm.com/site-images/800x800/1-1.jpg", "https://files.myglamm.com/site-images/800x800/2-1_3.jpg", "https://files.myglamm.com/site-images/800x800/3-1_2.jpg", "https://files.myglamm.com/site-images/800x800/4-1_2.jpg", "https://files.myglamm.com/site-images/800x800/5-1_2.jpg"],
+            image: ["https://files.myglamm.com/site-images/800x800/Product-1.jpg", "https://files.myglamm.com/site-images/800x800/1-1.jpg", "https://files.myglamm.com/site-images/800x800/2-1_3.jpg", "https://files.myglamm.com/site-images/800x800/3-1_2.jpg", "https://files.myglamm.com/site-images/800x800/4-1_2.jpg", "https://files.myglamm.com/site-images/800x800/5-1_2.jpg"],
             rating: "4.7",
             ratings: "7",
             category: "HAIR CARE",
@@ -152,49 +152,14 @@ function showProducts() {
         p_price.innerText = '₹ ' + product.price;
 
         let image = document.createElement('img');
-        let temp = product.images;
-        image.src = temp;
-        console.log(temp);
+        image.src = product.image[0];
 
-        // let btn = document.createElement('button');
-        // btn.setAttribute("class", "addtoCart");
-        // btn.innerText = 'Add to Cart';
-        // btn.onclick = function () {
-        //     addtoCart(product);
-        // }
 
-        div.append(p_name, p_description, p_price);
+
+        div.append(image, p_name, p_description, p_price);
 
         data_div.append(div);
 
     })
 }
 showProducts()
-
-// if(localStorage.getItem("bag") === null) {
-//     localStorage.setItem("bag", JSON.stringify([]));
-// }
-
-// let check = [];
-
-// function addtoCart(p) {
-
-//     let cart_data = JSON.parse(localStorage.getItem("bag"));
-
-//     if(check.includes(p.name) == true) {
-//         alert("Product is Already in The Cart.");
-        
-//         for(let i = 0; i < cart_data.length; i++) {
-//             if(cart_data[i].name === p.name) {
-//                 +cart_data[i].quantity++;
-//             }
-//         }
-
-//     } else {
-//         check.push(p.name)
-//         p.quantity = 1;
-//         cart_data.push(p);
-//     }
-
-//     localStorage.setItem("bag", JSON.stringify(cart_data));
-// }
