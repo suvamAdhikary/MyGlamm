@@ -1,0 +1,28 @@
+/* variables */
+
+:root {
+    --font-small: 0.875rem;  /* 14px */
+    --font-mid: 1rem; /* 16px */
+
+
+    /* Colour */
+
+    --intro-color: #1b2330;
+    --main-color: #171e2a;
+    --cta-cyan: #64e1d9;
+    --cta-blue: #329ece;
+
+}
+
+
+
+
+/* utilities */
+.flex {
+    display: flex;
+}
+
+
+
+
+/* color : #jknvkf */
