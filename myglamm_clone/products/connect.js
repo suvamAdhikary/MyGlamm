@@ -33,4 +33,4 @@ let topLeft = document.getElementById('shop__now');
 topLeft.href = '../shopNow.html';
 
 let topRight = document.getElementById('myglamm__store');
-topRight.href = '../myglammStore.html';
+topRight.href = '../myglammStoreLocator.html';

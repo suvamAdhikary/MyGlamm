@@ -100,7 +100,7 @@ function showAddDiv() {
 
     let topRight = document.createElement("a");
     topRight.setAttribute("id", "myglamm__store");
-    topRight.href = 'myglammStore.html';
+    topRight.href = 'myglammStoreLocator.html';
     topRight.innerHTML = `MyGlamm Store`;
 
     addDiv.append(topLeft, topRight);
