@@ -89,6 +89,27 @@ function showMiddleDiv() {
 showMiddleDiv();
 
 
+// below is the function for advertising div
+
+function showAddDiv() {
+
+    let topLeft = document.createElement("a");
+    topLeft.setAttribute("id", "shop__now");
+    topLeft.href = 'shopNow.html';
+    topLeft.innerHTML = `SHOP NOW`;
+
+    let topRight = document.createElement("a");
+    topRight.setAttribute("id", "myglamm__store");
+    topRight.href = 'myglammStore.html';
+    topRight.innerHTML = `MyGlamm Store`;
+
+    addDiv.append(topLeft, topRight);
+    header.append(addDiv);
+    header.insertBefore(addDiv, middleDiv);
+}
+showAddDiv();
+
+
 // below is the function for search input
 
 function searchFunction() {

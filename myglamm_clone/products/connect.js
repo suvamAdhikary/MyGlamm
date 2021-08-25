@@ -28,3 +28,9 @@ let bagLink = document.getElementById('bag__link');
 bagLink.href = '../cart.html';
 
 // let profile = document.getElementById('profile');
+
+let topLeft = document.getElementById('shop__now');
+topLeft.href = '../shopNow.html';
+
+let topRight = document.getElementById('myglamm__store');
+topRight.href = '../myglammStore.html';
