@@ -299,7 +299,7 @@ function showProducts() {
     p_price.innerText = "₹ " + product.price;
 
     let image = document.createElement("img");
-    image.src = product.image[0];
+    image.src = product.imagesSmall[0];
 
     div.append(image, p_name, p_description, p_price);
 
