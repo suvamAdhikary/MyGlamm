@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #verify{
+            width: 91%;
+            margin: auto;
+            margin-top: 20px;
+            height: 40px;
+            margin-left:20px;
+            background-color: black;
+            color: white;
+      }
+
+      .mainDiv{
+          width: 35%;
+          height: 650px;
+          border: 1px solid black;
+          margin: auto;
+      }
+      .headP{
+          text-align: center;
+          margin: 20px;
+          margin-bottom: 20px;
+      }
+      #otp{
+          margin-left: 30%;
+      }
+     
+      .imgDiv{
+          margin-left: 34%;
+      }
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+    <div id="main">
+        <p class="headP">VERIFY YOUR PHONE NUMBER</p>
+
+        <div class="imgDiv"><img src="https://www.myglamm.com/images/mob-otp.png" alt=""></div>
+
+
+    </div>
+    <input type="number" name="" id="otp">
+
+    <div>
+        <form action="">
+            
+
+            <button id="verify">VERIFY</button>
+        </form>
+    </div>
+</div>
+    <script>
+        var tel = localStorage.getItem("userPhone");
+        
+          
+        var otp = Math.floor(Math.random()*(10000 - 1001) + 1001);
+        
+        setTimeout(function otpGen() {
+            alert("your four digit OTP is = "+otp);
+        }, 2000);
+
+
+        function displayUserTel(){
+             var mainDiv = document.getElementById("main");
+            var text = document.createElement("h5");
+            text.innerText = "ENTER OTP SENT ON "+tel;
+            text.style.textAlign = "center";
+            mainDiv.append(text);
+
+            
+        }
+        displayUserTel();
+
+        var userData = [];
+        tel = JSON.parse(tel);
+        console.log(tel);
+
+        var nameValue = document.getElementById("verify");
+        nameValue.addEventListener("click",function(e){
+
+            e.preventDefault();
+            var otpGet = document.getElementById("otp").value;
+            if(otpGet == otp){
+
+                window.location.href = "";
+            }
+
+            else{
+                  alert("OTP is not correct");
+              }
+
+        });
+        
+    </script>
+</body>
+</html>
