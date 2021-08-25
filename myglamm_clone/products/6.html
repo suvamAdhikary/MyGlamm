@@ -8,7 +8,8 @@
 </head>
 <body>
     <header></header>
-    <script src="header.js"></script>
+    <script src="../header.js"></script>
+    <script src="connect.js"></script>
     <main>
         <div id="img__container" class="image__container">
             <div id="image__slider"></div>
@@ -84,7 +85,7 @@ function showProductImages() {
             let div = document.createElement('div');
 
             let image = document.createElement('img');
-            image.src = product.image[0];
+            image.src = product.imagesSmall[0];
 
             let btn = document.createElement('button');
             btn.setAttribute("class", "addtobag");
