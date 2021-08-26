@@ -84,13 +84,13 @@
          width: 57%;
          height: 25px;
      }
-     .submitC{
+     /* .submitC{
         
-     }
-     .cform{
+     } */
+     /* .cform{
 
      }
-      
+       */
     </style>
 </head>
 <body>
@@ -137,21 +137,22 @@
         
         var userPhone = document.getElementById("phoneNo").value;
 
-          var tel = (countryCode+"-"+userPhone);
+          var tel = (countryCode+userPhone);
           
           var flag = 0;
+          if(getInfo != null){
         getInfo.forEach(function(p){
             
             if(p.phone == tel){
-                window.location.href = ("http://127.0.0.1:5500/projectMyGlamm_clone/testing_stage/popup3.html");
+                window.location.href = ("popup3.html");
                 flag = 1;
             }
 
         })
-          
+    } 
           if(userPhone.length == 10 && flag ==0){
           localStorage.setItem("userPhone",JSON.stringify(tel));
-          window.location.href = ("http://127.0.0.1:5500/projectMyGlamm_clone/testing_stage/popup2.html");
+          window.location.href = ("popup2.html");
           }
           else if(userPhone.length !=10){
               alert("please enter a valid Phone number");
