@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .images-container{
+        width:100%;
+        height:350px;
+         }
+         .slide{
+             width: 100%;
+             height: 350px;
+             border: 1px solid black;
+             
+         }
+         #IMG{
+              
+            height: 350px; 
+            width: 100%;
+            background-size: contain;
+         }
+         
+         .slick-btns>button{
+             margin: 1px;
+             border-radius: 50%;
+    
+             
+             
+         }
+         .slick-btns{
+             display: flex;
+             margin-left: 46%;
+             margin-top: 70px; 
+            
+         }
+         .btn-active{
+             
+             background-color: rgb(241, 59, 84);
+             border: none;
+             
+         }
+         .img-arrow-left{
+            
+            margin-top: -230px;
+            margin-left: px;
+
+         }
+         .img-arrow-right{
+
+            margin-top: -100px;
+            margin-left: 92%;
+            
+             
+         }
+    </style>
+    
+</head>
+<body>
+    <div class="images-container">
+         
+        <div class="slide"><a href=""><img id = "IMG" src="https://files.myglamm.com/site-images/original/Homepage-web-Website_1.jpg"   alt=""></a></div>
+        <div class = "img-arrow-left">
+        <img id = "left-arrow"src="https://www.myglamm.com/images/slickArrowLeft.svg" alt="">
+
+        </div>
+       <div class="img-arrow-right">
+           <img id = "right-arrow"src="https://www.myglamm.com/images/slickArrowRight.svg" alt="">
+       
+        </div>
+      </div>
+     
+    <div class="slick-btns">
+       
+        <button class="btn-active btns"></button>
+        <button class="btns"></button>
+        <button class="btns"></button>
+        <button class="btns"></button>
+        <button class="btns"></button>
+        <button class="btns"></button>
+ 
+
+    
+    </div>
+
+<script>
+    var i =0;
+    var photos = [];
+
+    var links = [];
+
+    photos[0] =  "https://files.myglamm.com/site-images/original/Homepage-web-Website_1.jpg";
+    photos[1] =  "https://files.myglamm.com/site-images/original/Banner-01.png";
+    photos[2] = "https://files.myglamm.com/site-images/original/Homepage-desktop.jpg";
+    photos[3] = "https://files.myglamm.com/site-images/original/Website-Homepage-banner_2.jpg";
+    photos[4] = "https://files.myglamm.com/site-images/original/Adapts-Homepage-Banner-Desktop.jpg";
+    photos[5] = "https://files.myglamm.com/site-images/original/Website-Homepage-banner_2.jpg";
+  
+ 
+
+
+    var show = document.getElementById("IMG");
+    var btns = document.getElementsByClassName("btns");
+    var leftArrow = document.getElementById("left-arrow");
+    var rightArrow = document.getElementById("right-arrow");
+   
+    function slideshow(){
+      
+        
+      show.src = photos[i];
+
+      show.href = links[i];
+
+      btns[i].classList.add("btn-active");
+      if(i>0){
+      btns[i-1].classList.remove("btn-active");}
+      if(i==0){
+          btns[photos.length-1].classList.remove("btn-active");
+      }
+      
+    
+
+      if(i<photos.length-1){
+          i++;
+          
+      }
+      else {
+          i=0;
+      }
+
+      
+      
+    leftArrow.addEventListener("click", function(e){
+       
+        
+             
+           
+
+            show.src = photos[i--];
+        
+    })
+    rightArrow.addEventListener("click", function(e){
+        
+           i = i+1;
+           show.src = photos[i++];
+    })
+      
+  }
+  
+
+  setInterval("slideshow()", 1000);
+  
+
+    
+
+
+</script>
+</body>
+
+</html>
+
