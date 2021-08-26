@@ -39,9 +39,9 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Open.jpg",
       "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Closed.jpg",
     ],
-    rating: "4.7",
-    ratings: "7",
-    category: "HAIR CARE",
+    rating: "3",
+    ratings: "9",
+    category: "SKIN CARE",
   },
   {
     name: "MYGLAMM SUPERFOODS ONION & MORINGA HAIR OIL",
@@ -184,6 +184,27 @@ const myGlamm_products = [
     category: "SKIN CARE",
   },
   {
+    name: "GLOW IRIDESCENT BRIGHTENING BODY LOTION",
+    description: "Rosehip Oil-infused Illuminating Body Lotion",
+    price: "1198",
+    imagesLarge: [
+      "https://files.myglamm.com/site-images/800x800/BODY-LOTION.jpg",
+      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
+      "https://files.myglamm.com/site-images/800x800/A46A9685_1.jpg",
+      "https://files.myglamm.com/site-images/800x800/body-lotion-1.jpeg",
+    ],
+    imagesSmall: [
+      "https://files.myglamm.com/site-images/200x200/BODY-LOTION.jpg",
+      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
+      "https://files.myglamm.com/site-images/200x200/A46A9685_1.jpg",
+      "https://files.myglamm.com/site-images/200x200/body-lotion-1.jpeg",
+    ],
+
+    rating: "5",
+    ratings: "31",
+    category: "SKIN CARE",
+  },
+  {
     name: "WIPEOUT GERM KILLING FACE WASH",
     description:
       "Tea Tree Oil & Vitamin E-infused Germ-killing & Purifying Face Wash",
@@ -311,6 +332,26 @@ const myGlamm_products = [
     rating: "4.8",
     ratings: "36",
     category: "MAKEUP",
+  },
+  {
+    name: "MANISH MALHOTRA SANDALWOOD SPF 25 GEL",
+    description: "Gel-based Natural Sunscreen With SPF",
+    price: "945",
+    imagesLarge: [
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_2.jpg",
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_3.jpg",
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_4.jpg",
+      "https://files.myglamm.com/site-images/800x800/Sandalwood_2.jpg",
+    ],
+    imagesSmall: [
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_2.jpg",
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_3.jpg",
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_4.jpg",
+      "https://files.myglamm.com/site-images/200x200/Sandalwood_2.jpg",
+    ],
+    rating: "4.9",
+    ratings: "16",
+    category: "SKINCARE",
   },
 ];
 
