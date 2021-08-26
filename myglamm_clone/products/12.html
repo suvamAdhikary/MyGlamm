@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy SUPERFOODS Onion & Moringa Shampoo Online at Best Price - MyGlamm</title>
+</head>
+<body>
+    <header></header>
+    <script src="../header.js"></script>
+    <script src="connect.js"></script>
+    <main>
+        <div id="img__container" class="image__container">
+            <div id="image__slider"></div>
+            <div id="image__onfocous"></div>
+        </div>
+        <div id="details__container" class="dtls__container">
+    
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+<script>
+    let imgSlider = document.getElementById("image__slider");
+    let imgOnFocuse = document.getElementById("image__onfocous")
+    let detailsDiv = document.getElementById("details__container");
+
+
+    let myProducts = localStorage.getItem('glamm_products');
+
+    myProducts = JSON.parse(myProducts);
+
+// Below is the funtion for showing product details
+
+function showProductDetails() {
+    
+    myProducts.forEach(function(product, n) {
+ 
+        if(n == 12) {
+
+            let p_name = document.createElement('h2');
+            p_name.setAttribute('class', 'product__name');
+            p_name.innerText = product.name;
+
+            let p_description = document.createElement('p');
+            p_description.setAttribute('class', 'product__description');
+            p_description.innerText = product.description;
+
+            let rating = document.createElement('p');
+            rating.setAttribute('class', 'rating');
+            rating.innerText = product.rating;
+
+            let rating_giver = document.createElement('p');
+            rating_giver.setAttribute('class', 'rating__giver');
+            rating_giver.innerText = `${product.ratings} ratings`;
+
+            let p_price = document.createElement('p');
+            p_price.innerText = '₹ ' + product.price;
+
+            let btn = document.createElement('button');
+            btn.setAttribute("class", "addtobag");
+            btn.innerText = 'ADD TO BAG';
+            btn.onclick = function () {
+                addtoCart(product);
+            }
+
+            detailsDiv.append(p_name, p_description, rating, rating_giver, p_price, btn);
+        }
+
+    })
+}
+showProductDetails();
+
+
+// Below is the function for displaying product images
+
+function showProductImages() {
+    
+    myProducts.forEach(function(product, n) {
+ 
+        if(n == 12) {
+
+            let div = document.createElement('div');
+
+            let image = document.createElement('img');
+            image.src = product.imagesSmall[0];
+
+            let btn = document.createElement('button');
+            btn.setAttribute("class", "addtobag");
+            btn.innerText = 'ADD TO BAG';
+            btn.onclick = function () {
+                addtoCart(product);
+            }
+
+            imgOnFocuse.append(image);
+        }
+
+    })
+
+}
+showProductImages();
+
+
+// Below is the function for add to bag
+
+
+if(localStorage.getItem("glammBag") === null) {
+    localStorage.setItem("glammBag", JSON.stringify([]));
+}
+
+let check = [];
+
+function addtoCart(p) {
+
+    let cart_data = JSON.parse(localStorage.getItem("glammBag"));
+
+    if(check.includes(p.name) == true) {
+        alert("Product is Already in The Cart.");
+        
+        for(let i = 0; i < cart_data.length; i++) {
+            if(cart_data[i].name === p.name) {
+                +cart_data[i].quantity++;
+            }
+        }
+
+    } else {
+        check.push(p.name)
+        p.quantity = 1;
+        cart_data.push(p);
+    }
+
+    localStorage.setItem("glammBag", JSON.stringify(cart_data));
+}
+</script>

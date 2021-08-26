@@ -11,7 +11,7 @@ var i =0;
     photos[5] = "https://files.myglamm.com/site-images/original/Website-Homepage-banner_2.jpg";
 
     var show = document.getElementById("IMG");
-    
+    console.log(show);
     function slideshow(){
       
         
