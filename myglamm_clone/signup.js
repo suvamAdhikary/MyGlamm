@@ -1,48 +1,72 @@
-var user = localStorage.getItem("glammUsers");
-console.log(user);
-         
+let user = localStorage.getItem("glammUsers");
+user = JSON.parse(user);
+
+let Flag = JSON.parse(localStorage.getItem('flag'))
+
+
         var otp = Math.floor(Math.random()*(10000 - 1001) + 1001);
 
         setTimeout(function otpGen() {
             alert("your four digit OTP is = "+otp);
         }, 2000);
         
-        function displayUserTel(){
-            var mainDiv = document.getElementById("main");
-            var text = document.createElement("h5");
-            text.innerText = "ENTER OTP SENT ON "+tel;
-            text.style.textAlign = "center";
-            mainDiv.append(text,);  
+        
+        // displayUserTel.innerHTML = `ENTER OTP SENT ON <span><u>+${user.countryCode} ${user.mobile}</u></span>`;
+
+        function displayUserTel() {
+            
+            let displayBox = document.getElementById("signup__display--phone");
+            
+            user.forEach(function(ele) {
+
+                if(ele.mobile == Flag) {
+                    displayBox.innerHTML = `ENTER OTP SENT ON <span><u>+${ele.countryCode} ${ele.mobile}</u></span>`;
+                }
+            })
         }
         displayUserTel();
 
-        var userData = [];
-        tel = JSON.parse(tel);
-        console.log(tel);
 
-        var nameValue = document.getElementById("verify");
-        nameValue.addEventListener("click",function(e){
+        let verifyBtn = document.getElementById("signup__verify");
+
+
+        verifyBtn.addEventListener("click", function(e) {
 
             e.preventDefault();
 
-            var name = document.getElementById("name1").value;
-            var email = document.getElementById("email1").value;
-            var otpGet = document.getElementById("otp").value;
+            let userName = document.getElementById("signup__name").value;
+
+            let userEmail = document.getElementById("signup__email").value;
+
+            let otpGet = document.getElementById("signup__otp").value;
+
             if(otpGet == otp){
-              if(name.length >= 2 && email.includes("@")&&email.length>5){
-            var obj = {};
-            obj.name  = name;
-            obj.email = email;
-            obj.phone = tel;
-            
-            userData.push(obj);
-            console.log(obj);
-            localStorage.setItem("userInfo", JSON.stringify(userData));
-              }
-              else{
-                  alert("please enter a valid name and valid email address");
-              }}
-              else{
-                  alert("OTP is not corret");
-              }
+
+                if(userName.length >= 2 && userEmail.includes("@") && userEmail.length > 5) {
+
+                    user.forEach(function(ele, n) {
+
+                        if(ele.mobile == Flag) {
+                            ele.address.name = userName;
+                            ele.address.email = userEmail;
+                            ele.address.mobile = Flag;
+                        }
+                    })
+
+                    localStorage.setItem("glammUsers", JSON.stringify(user));
+
+                    window.location.assign("index.html");
+
+                } else {
+
+                    alert("Please enter a valid name and valid email address");
+
+                }
+
+            } else {
+
+                alert("OTP is not corret");
+
+            }
+
         });

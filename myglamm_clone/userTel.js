@@ -1,13 +1,18 @@
-let users;
-
-// localStorage.setItem('glammUsers', JSON.stringify([]));
-
-if(localStorage.getItem('glammUsers' == null)) {
-    localStorage.setItem('glammUsers', JSON.stringify([]));
-} else {
-    users = JSON.parse(localStorage.getItem('glammUsers'));
+if(localStorage.getItem("flag") === null) {
+    localStorage.setItem("flag", JSON.stringify(null));
 }
-users.push()
+  
+  
+if(localStorage.getItem("glammUsers") === null) {
+    localStorage.setItem("glammUsers", JSON.stringify([]));
+}
+  
+
+
+let users = JSON.parse(localStorage.getItem('glammUsers'));
+
+
+let Flag = JSON.parse(localStorage.getItem('flag'));
 
 
 function checkExistence(tel) {
@@ -56,6 +61,10 @@ function submitTel(e) {
 
             users.push(user_object);
             localStorage.setItem('glammUsers', JSON.stringify(users));
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+
             window.location.href = "signup.html";
         } else if (checkExistence(userPhone) == false) {
 
@@ -80,9 +89,16 @@ function submitTel(e) {
 
             users.push(user_object);
             localStorage.setItem('glammUsers', JSON.stringify(users));
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+
             window.location.href = "signup.html";
 
         } else {
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
 
             window.location.href = "login.html";
 

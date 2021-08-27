@@ -10,22 +10,19 @@
 <body>
     <header></header>
     <main>
-        <div id="main">
-            <p class="headP">VERIFY YOUR PHONE NUMBER</p>
-        </div>
-        <input type="text" name="" id="otp">
-        <div class="labelName">
-        <form>
-            <div class="label1">
-            <label  for="">Name</label>
-                
-            <input id = "name1" type="text" placeholder="name">
-            </div>
-            <div class="label2">
-            <label  for="">Email</label>
-            <input id = "email1" type="text" placeholder="email">
-            </div></div>
-            <button id="verify">VERIFY</button>
+        <p class="headP">VERIFY YOUR PHONE NUMBER</p>
+        <p id="signup__display--phone"></p>
+
+        <input type="text" id="signup__otp" autofocus required>
+
+        <form id="form__signup">
+            <label  for="signup__name">Name</label>    
+            <input id = "signup__name" type="text" placeholder="*Full Name" required autofocus autocomplete="name">
+
+            <label for="signup__email">Email</label>
+            <input id = "signup__email" type="email" placeholder="*Email Address" required autofocus autocomplete="email">
+
+            <button id="signup__verify">VERIFY</button>
         </form> 
     </main>
     <footer></footer>
