@@ -33,6 +33,20 @@ issDefault.onclick = function() {
     issDefault.setAttribute('value', 'true')
 }
 
+currentUser.forEach(function(ele) {
+
+
+    if(ele.mobile == Flag) {
+
+        let mobile = document.getElementById('address__tel');
+        mobile.value = ele.mobile;
+    
+        let email = document.getElementById('address__email');
+        email.value = ele.email;
+    }
+})
+
+
 
 function submitAddress(e) {
     e.preventDefault();
@@ -61,22 +75,27 @@ function submitAddress(e) {
 
     let isDefault = document.getElementById('mark__default').value;
 
+    shipping = new shippingAddress(name, mobile, email, type, houseNo, streetName, neighbor, pin, city, state, landmark, isDefault, shipping);
+
 
     currentUser.forEach(function (ele) {
 
         if(ele.mobile == Flag) {
 
-            ele.prototype = new shippingAddress(name, mobile, email, type, houseNo, streetName, neighbor, pin, city, state, landmark, isDefault, shipping);
+            ele.address.push(shipping);
 
+            ele.prototype = shipping;
         }
-    });
+    })
 
-    localStorage.setItem('glammUsers', 'currentUser');
+    localStorage.setItem("glammUsers", JSON.stringify(currentUser));
 
-    window.location.assign(`checkout.html`)
+    window.location.assign(`checkout.html`);
 }
 
-let backtoBag = document.getElementById('backto__bag');
-backtoBag.onclick = function() {
-    window.location.assign(`cart.html`);
+let backToBag = document.getElementById('backto__bag')
+backToBag.onclick = function () {
+
+    window.location.href = `cart.html`;
+
 }
