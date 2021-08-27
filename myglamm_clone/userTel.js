@@ -46,16 +46,20 @@ function submitTel(e) {
                 mobile: document.getElementById("mobile__no").value,
                 cart: [],
                 wishlist: [],
-                address: {
-                    name: "",
-                    mobile: "",
-                    email: "",
-                    pincode: "",
-                    city: "",
-                    state: "",
-                    address: "",
-                    landmark: "",
-                }
+                name: "",
+                email: "",
+                // address: [
+                //     {
+                //         name: "",
+                //         mobile: "",
+                //         email: "",
+                //         pincode: "",
+                //         city: "",
+                //         state: "",
+                //         address: "",
+                //         landmark: "",
+                //     },
+                // ],
             }
 
 
