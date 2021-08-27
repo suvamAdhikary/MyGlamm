@@ -14,15 +14,18 @@ let collection = document.getElementById('collection');
 collection.href = '../collection.html';
 
 let rewards = document.getElementById('rewards');
-rewards.href = '../rewards.html';
+rewards.href = '../referandearn.html';
 
-let myglammStudio = document.getElementById('myglamm__studio');
-myglammStudio.href = '../myglammStudio.html';
+let aboutNav = document.getElementById('myglamm__studio');
+aboutNav.href = '../about.html';
 
 let mainLogo = document.getElementById('main__logo');
 mainLogo.href = '../index.html';
 
 // let searchBar = document.getElementById('search__bar');
+
+let refer = document.getElementById('refer__earn');
+refer.href = '../referandearn.html';
 
 let bagLink = document.getElementById('bag__link');
 bagLink.href = '../cart.html';
