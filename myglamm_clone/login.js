@@ -35,14 +35,16 @@ let Flag = JSON.parse(localStorage.getItem('flag'))
 
             if(otpGet == otp){
 
-                user.forEach(function(ele, n) {
+                user.forEach(function(ele) {
 
                     if(ele.mobile == Flag) {
 
-                        window.location.assign("index.html");
+                        localStorage.setItem("flag", JSON.stringify(Flag));
 
+                        window.location.assign("index.html");
                     }
                 })
+
 
             } else {
 
@@ -51,3 +53,4 @@ let Flag = JSON.parse(localStorage.getItem('flag'))
             }
 
         });
+        

@@ -82,10 +82,26 @@ function showMiddleDiv() {
     bagLink.href = 'cart.html';
     bagLink.innerHTML = `My Bag`;
 
+
+    // profile button start
+
     let profile = document.createElement('a');
     profile.setAttribute('id', 'profile');
-    profile.onclick = profileFunction;
-    profile.innerHTML = `Profile`;
+
+    Flag = JSON.parse(localStorage.getItem('flag'));
+
+    if (Flag == null) {
+        profile.innerText = 'Signup / Login';
+        profile.href = `user_tel.html`;
+    } else {
+        profile.innerText = 'Logout';
+        profile.href = `index.html`;
+    }
+
+    // profile.onclick = profileFunction;
+    // profile.innerHTML = `Profile`;
+
+    // profile btn end
 
     middleDiv.append(mainLogo, searchBar, refer, bagLink, profile);
     header.append(middleDiv);
@@ -123,6 +139,19 @@ function searchFunction() {
 
 // below is the function for profile button
 
-function profileFunction() {
+// function profileFunction() {
 
-}
+//     let profile = document.getElementById('profile').innerText;
+
+//     Flag = JSON.parse(localStorage.getItem('flag'));
+
+//     if(profile == 'Logout') {
+
+//         profile.textContent = 'Signup / Login';
+//         profile.href = `user_tel.html`;
+
+//         localStorage.setItem('flag', JSON.stringify('null'));
+
+//     }
+// }
+// profileFunction();
