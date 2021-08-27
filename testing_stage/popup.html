@@ -137,9 +137,10 @@
         
         var userPhone = document.getElementById("phoneNo").value;
 
-          var tel = (countryCode+"-"+userPhone);
+          var tel = (countryCode+userPhone);
           
           var flag = 0;
+          if(getInfo != null){
         getInfo.forEach(function(p){
             
             if(p.phone == tel){
@@ -148,7 +149,7 @@
             }
 
         })
-          
+    } 
           if(userPhone.length == 10 && flag ==0){
           localStorage.setItem("userPhone",JSON.stringify(tel));
           window.location.href = ("popup2.html");

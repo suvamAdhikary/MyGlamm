@@ -1,44 +1,114 @@
-var form = document.getElementById("form");
+if(localStorage.getItem("flag") === null) {
+    localStorage.setItem("flag", JSON.stringify(null));
+}
+  
+  
+if(localStorage.getItem("glammUsers") === null) {
+    localStorage.setItem("glammUsers", JSON.stringify([]));
+}
+  
 
-var userData = [];
-var getInfo = localStorage.getItem("userInfo");
-getInfo = JSON.parse(getInfo);
+
+let users = JSON.parse(localStorage.getItem('glammUsers'));
 
 
-console.log(getInfo);
-form.addEventListener("submit",function(e){
+let Flag = JSON.parse(localStorage.getItem('flag'));
 
- e.preventDefault();
 
- var countryCode = document.getElementById("countryCode").value;
- 
- var userPhone = document.getElementById("phoneNo").value;
+function checkExistence(tel) {
+    let temp = false;
 
-   var tel = (countryCode+"-"+userPhone);
-   
-   var flag = 0;
- getInfo.forEach(function(p){
-     
-     if(p.phone == tel){
-         window.location.href = ("http://127.0.0.1:5500/projectMyGlamm_clone/testing_stage/popup3.html");
-         flag = 1;
-     }
+    let userData = JSON.parse(localStorage.getItem('glammUsers'));
 
- })
-   
-   if(userPhone.length == 10 && flag ==0){
-   localStorage.setItem("userPhone",JSON.stringify(tel));
-   window.location.href = ("http://127.0.0.1:5500/projectMyGlamm_clone/testing_stage/popup2.html");
-   }
-   else if(userPhone.length !=10){
-       alert("please enter a valid Phone number");
-   }
-})
+    for(let i = 0; i < userData.length; i++) {
+        if(userData[i].mobile == tel) {
+            temp = true;
+            break;
+        }
+    }
 
-var closeBtn = document.getElementById("closeBtn");
-console.log(closeBtn);
+    return temp;
+}
 
-closeBtn.addEventListener("click",function(){
- console.log("clicked");
-    window.location.href = "";
-})
+function submitTel(e) {
+    e.preventDefault();
+
+
+    let userPhone = document.getElementById("mobile__no").value;
+
+    if (userPhone.length == 10 && (userPhone[0] == 9 || userPhone[0] == 8 || userPhone[0] == 7 || userPhone[0] == 6)) {
+
+        if(users.length < 1) {
+            
+            const user_object = {
+
+                countryCode: document.getElementById("country__code").value,
+                mobile: document.getElementById("mobile__no").value,
+                cart: [],
+                wishlist: [],
+                address: {
+                    name: "",
+                    mobile: "",
+                    email: "",
+                    pincode: "",
+                    city: "",
+                    state: "",
+                    address: "",
+                    landmark: "",
+                }
+            }
+
+
+            users.push(user_object);
+            localStorage.setItem('glammUsers', JSON.stringify(users));
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+
+            window.location.href = "signup.html";
+        } else if (checkExistence(userPhone) == false) {
+
+            const user_object = {
+
+                countryCode: document.getElementById("country__code").value,
+                mobile: document.getElementById("mobile__no").value,
+                cart: [],
+                wishlist: [],
+                address: {
+                    name: "",
+                    mobile: "",
+                    email: "",
+                    pincode: "",
+                    city: "",
+                    state: "",
+                    address: "",
+                    landmark: "",
+                }
+            }
+
+
+            users.push(user_object);
+            localStorage.setItem('glammUsers', JSON.stringify(users));
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+
+            window.location.href = "signup.html";
+
+        } else {
+
+            Flag = userPhone;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+
+            window.location.href = "login.html";
+
+        }
+
+    } else {
+
+        let msg = document.getElementById("show__alert")
+
+        msg.innerText = 'Please enter valid mobile number';
+
+    }
+}

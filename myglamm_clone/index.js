@@ -388,3 +388,13 @@ function showProducts() {
   });
 }
 showProducts();
+
+
+if(localStorage.getItem("flag") === null) {
+  localStorage.setItem("flag", JSON.stringify(null));
+}
+
+
+if(localStorage.getItem("glammUsers") === null) {
+  localStorage.setItem("glammUsers", JSON.stringify([]));
+}

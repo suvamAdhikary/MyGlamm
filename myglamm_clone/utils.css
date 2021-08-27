@@ -7,10 +7,9 @@
 
     /* Colour */
 
-    --intro-color: #1b2330;
-    --main-color: #171e2a;
-    --cta-cyan: #64e1d9;
-    --cta-blue: #329ece;
+    --bg-color-one: #f4f4f4;
+    --bg-color-two: #fbe7e7;
+    --bg-color-three: #FFFFFF;
 
 }
 

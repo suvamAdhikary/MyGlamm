@@ -110,27 +110,71 @@ if(localStorage.getItem("glammBag") === null) {
     localStorage.setItem("glammBag", JSON.stringify([]));
 }
 
+let Flag = JSON.parse(localStorage.getItem('flag'));
+
+let user = localStorage.getItem("glammUsers");
+user = JSON.parse(user)
+
 let check = [];
 
 function addtoCart(p) {
 
     let cart_data = JSON.parse(localStorage.getItem("glammBag"));
 
+
+
     if(check.includes(p.name) == true) {
         alert("Product is Already in The Cart.");
-        
-        for(let i = 0; i < cart_data.length; i++) {
-            if(cart_data[i].name === p.name) {
-                +cart_data[i].quantity++;
+
+        if (Flag != null) {
+
+            user.forEach(function(ele) {
+
+                if(ele.mobile == Flag) {
+    
+                    for(let i = 0; i < ele.cart.length; i++) {
+                        if(ele.cart[i].name === p.name) {
+                            +ele.cart[i].quantity++;
+                        }
+                    }
+                }
+            })
+        } else {
+
+            for(let i = 0; i < cart_data.length; i++) {
+                if(cart_data[i].name === p.name) {
+                    +cart_data[i].quantity++;
+                }
             }
         }
+
 
     } else {
         check.push(p.name)
         p.quantity = 1;
-        cart_data.push(p);
+
+        if(Flag != null) {
+
+            user.forEach(function(ele) {
+
+                if(ele.mobile == Flag) {
+
+                    ele.cart.push(p)
+
+                }
+            })
+        } else {
+
+            cart_data.push(p);
+        }
     }
 
-    localStorage.setItem("glammBag", JSON.stringify(cart_data));
+    if(Flag != null) {
+
+        localStorage.setItem("glammUsers", JSON.stringify(user));
+    } else {
+
+        localStorage.setItem("glammBag", JSON.stringify(cart_data));
+    }
 }
 </script>
