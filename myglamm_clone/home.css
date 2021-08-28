@@ -1,12 +1,15 @@
 #landing__main {
     display: flex;
     flex-grow: column;
+    padding: 1% 10%;
+    flex-basis: auto;
 }
 
 #home__products {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     grid-gap: 5%;
+    flex-basis: auto;
 }
 
 #home__products div{
