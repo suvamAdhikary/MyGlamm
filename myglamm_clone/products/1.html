@@ -13,7 +13,7 @@
     <header></header>
     <script src="../header.js"></script>
     <script src="connect.js"></script>
-    <main>
+    <main id="mainImgDiv">
         <div id="img__container" class="image__container">
             <div id="image__slider"></div>
             <div id="image__onfocous"></div>
@@ -89,7 +89,7 @@ function showProductImages() {
 
             let image = document.createElement('img');
             image.src = product.imagesSmall[0];
-
+            image.setAttribute("id","featured");
             let btn = document.createElement('button');
             btn.setAttribute("class", "addtobag");
             btn.innerText = 'ADD TO BAG';
@@ -104,6 +104,149 @@ function showProductImages() {
 
 }
 showProductImages();
+
+
+
+let pics = myProducts[1].imagesSmall;
+console.log(pics);
+
+console.log(pics);
+let mainDiv = document.getElementById("mainImgDiv");
+console.log(mainDiv);
+
+let imageSlider = document.createElement("div");
+let featuredImg = document.getElementById("featured");
+let rightImgSlide = document.createElement("img");
+let leftImgSlide = document.createElement("img");
+imageSliderIn = document.createElement("div");
+imageSliderIn.setAttribute("id","slider");
+leftImgSlide.src = "https://www.myglamm.com/images/slickArrowLeft.svg";
+rightImgSlide.src = "https://www.myglamm.com/images/slickArrowRight.svg";
+
+rightImgSlide.setAttribute("id","rtSlide");
+leftImgSlide.setAttribute("id","ltSlide");
+
+//leftImgSlide.addEventListener("click",)
+imageSlider.append(leftImgSlide);
+imageSlider.style.maxWidth = "500px";
+imageSliderIn.style.maxWidth = "280px";
+
+imageSliderIn.style.display = "flex";
+
+ imageSlider.style.display = "flex";
+imageSliderIn.style.overflowX = "hidden";
+
+
+
+
+
+
+
+//thumbnail.setAttribute();
+let picture = document.createElement("img");
+picture.setAttribute("class", "thumbnails");
+picture.setAttribute("class","active");
+picture.src = pics[0];
+picture.style.width = "100px";
+picture.style.height = "100px";
+
+picture.style.margin = "5px";
+picture.addEventListener("mouseover", function(){
+     featuredImg.src = picture.src;
+})
+
+imageSliderIn.append(picture);
+console.log(imageSliderIn);
+
+let picture2 = document.createElement("img");
+picture2.setAttribute("class", "thumbnails");
+picture2.setAttribute("class","active");
+picture2.src = pics[1];
+picture2.style.width = "100px";
+
+
+picture2.style.height = "100px";
+picture2.style.margin = "5px";
+picture2.addEventListener("mouseover", function(){
+     featuredImg.src = picture2.src;
+})
+imageSliderIn.append(picture2);
+console.log(imageSliderIn);
+
+
+
+let picture3 = document.createElement("img");
+picture3.setAttribute("class", "thumbnails");
+picture3.setAttribute("class","active");
+picture3.src = pics[2];
+picture3.style.width = "100px";
+picture3.style.height = "100px";
+
+picture3.style.margin = "5px";
+picture3.addEventListener("mouseover", function(){
+     featuredImg.src = picture3.src;
+})
+
+imageSliderIn.append(picture3);
+console.log(imageSliderIn);
+
+
+let picture4 = document.createElement("img");
+picture4.setAttribute("class", "thumbnails");
+picture4.setAttribute("class","active");
+picture4.src = pics[3];
+picture4.style.width = "100px";
+picture4.style.height = "100px";
+
+picture4.style.margin = "5px";
+picture4.addEventListener("mouseover", function(){
+     featuredImg.src = picture4.src;
+})
+
+imageSliderIn.append(picture4);
+
+console.log(imageSliderIn);
+
+let picture5 = document.createElement("img");
+picture5.setAttribute("class", "thumbnails");
+picture5.setAttribute("class","active");
+picture5.src = pics[4];
+picture5.style.width = "100px";
+picture5.style.height = "100px";
+
+picture5.style.margin = "5px";
+picture5.addEventListener("mouseover", function(){
+     featuredImg.src = picture5.src;
+})
+imageSliderIn.append(picture5);
+
+
+imageSlider.append(imageSliderIn);
+console.log(imageSlider);
+
+imageSlider.append(rightImgSlide);
+console.log(imageSlider);
+
+mainDiv.append(imageSlider);
+
+
+
+let rightClick = document.getElementById("rtSlide");
+let leftClick = document.getElementById("ltSlide");
+
+
+rightClick.addEventListener("click",function(){
+       document.getElementById("slider").scrollLeft += 180
+})
+
+leftClick.addEventListener("click",function(){
+       document.getElementById("slider").scrollLeft -= 180
+})
+
+
+
+
+
 
 
 // Below is the function for add to bag
