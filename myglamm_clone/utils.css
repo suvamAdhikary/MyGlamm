@@ -1,18 +1,22 @@
 /* variables */
 
 :root {
+    --font--family-100: @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
     --font-small: 0.875rem;  /* 14px */
     --font-mid: 1rem; /* 16px */
 
 
     /* Colour */
 
-    --bg-color-one: #f4f4f4;
-    --bg-color-two: #fbe7e7;
-    --bg-color-three: #FFFFFF;
-
+    --bg-color-main: #F5F5F6;
+    --bg-color-ad: #ecd3d3;
+    --bg-color-white: #FFFFFF;
+    --bg-color-headings: #f39596;
 }
-
+* {
+    color: #FEE8E8, #F5F5F6;
+}
 
 
 /* utilities */
