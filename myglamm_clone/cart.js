@@ -114,7 +114,7 @@ function showBag() {
     totalPrice.innerText = `₹ ${total}`;
     
     let cashbackOffer = document.getElementById("cashback");
-    cashbackOffer.innerText = `₹ ${total * 0.10} MyGlammXO Points`;
+    cashbackOffer.innerText = `₹ ${Math.round(total * 0.10)} MyGlammXO Points`;
 
 }
 showBag()
