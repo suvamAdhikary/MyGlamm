@@ -23,26 +23,7 @@ const myGlamm_products = [
     ratings: "7",
     category: "HAIR CARE",
   },
-  {
-    name: "YOUTHFULL HYDRATING MOISTURISING CREAM WITH WATER BANK TECHNOLOGY",
-    description: "Lightweight Marine Hydrating Moisturising Cream",
-    price: "299",
-    imagesLarge: [
-      " https://files.myglamm.com/site-images/800x800/1627822959419-Moistuirising-Cream-Swatch.jpeg",
-      "https://files.myglamm.com/site-images/800x800/Moistuirising-Cream-Swatch_1.jpg",
-      "https://files.myglamm.com/site-images/800x800/Moistuirisng-Cream-Open.jpg",
-      "https://files.myglamm.com/site-images/800x800/Moistuirisng-Cream-Closed.jpg",
-    ],
-    imagesSmall: [
-      " https://files.myglamm.com/site-images/200x200/1627822959419-Moistuirising-Cream-Swatch.jpeg",
-      "https://files.myglamm.com/site-images/200x200/Moistuirising-Cream-Swatch_1.jpg",
-      "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Open.jpg",
-      "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Closed.jpg",
-    ],
-    rating: "3",
-    ratings: "9",
-    category: "SKIN CARE",
-  },
+  {},
   {
     name: "MYGLAMM SUPERFOODS ONION & MORINGA HAIR OIL",
     description: "For Hair Fall Control",
@@ -117,26 +98,6 @@ const myGlamm_products = [
     category: "SKIN CARE",
   },
   {
-    name: "YOUTHFULL HYDRATING MOISTURISING LOTION WITH WATER BANK TECHNOLOGY",
-    description: "Marine Rich Hydrating Body Lotion with Hyaluronic Acid",
-    price: "995",
-    imagesLarge: [
-      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Swatch.jpg",
-      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Swatch_1.jpg",
-      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Open.jpg",
-      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Closed.jpg",
-    ],
-    imagesSmall: [
-      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Swatch.jpg",
-      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Swatch_1.jpg",
-      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Open.jpg",
-      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Closed.jpg",
-    ],
-    rating: "5",
-    ratings: "7",
-    category: "SKIN CARE",
-  },
-  {
     name: "POSE HD BANANA POWDER - YELLOW",
     description: "HD Yellow Setting Powder",
     price: "699",
@@ -181,27 +142,6 @@ const myGlamm_products = [
 
     rating: "5",
     ratings: "8",
-    category: "SKIN CARE",
-  },
-  {
-    name: "GLOW IRIDESCENT BRIGHTENING BODY LOTION",
-    description: "Rosehip Oil-infused Illuminating Body Lotion",
-    price: "1198",
-    imagesLarge: [
-      "https://files.myglamm.com/site-images/800x800/BODY-LOTION.jpg",
-      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
-      "https://files.myglamm.com/site-images/800x800/A46A9685_1.jpg",
-      "https://files.myglamm.com/site-images/800x800/body-lotion-1.jpeg",
-    ],
-    imagesSmall: [
-      "https://files.myglamm.com/site-images/200x200/BODY-LOTION.jpg",
-      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
-      "https://files.myglamm.com/site-images/200x200/A46A9685_1.jpg",
-      "https://files.myglamm.com/site-images/200x200/body-lotion-1.jpeg",
-    ],
-
-    rating: "5",
-    ratings: "31",
     category: "SKIN CARE",
   },
   {
@@ -333,26 +273,6 @@ const myGlamm_products = [
     ratings: "36",
     category: "MAKEUP",
   },
-  {
-    name: "MANISH MALHOTRA SANDALWOOD SPF 25 GEL",
-    description: "Gel-based Natural Sunscreen With SPF",
-    price: "945",
-    imagesLarge: [
-      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_2.jpg",
-      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_3.jpg",
-      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_4.jpg",
-      "https://files.myglamm.com/site-images/800x800/Sandalwood_2.jpg",
-    ],
-    imagesSmall: [
-      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_2.jpg",
-      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_3.jpg",
-      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_4.jpg",
-      "https://files.myglamm.com/site-images/200x200/Sandalwood_2.jpg",
-    ],
-    rating: "4.9",
-    ratings: "16",
-    category: "SKINCARE",
-  },
 ];
 
 const myGlamm_products_json = JSON.stringify(myGlamm_products);
@@ -388,13 +308,3 @@ function showProducts() {
   });
 }
 showProducts();
-
-
-if(localStorage.getItem("flag") === null) {
-  localStorage.setItem("flag", JSON.stringify(null));
-}
-
-
-if(localStorage.getItem("glammUsers") === null) {
-  localStorage.setItem("glammUsers", JSON.stringify([]));
-}
