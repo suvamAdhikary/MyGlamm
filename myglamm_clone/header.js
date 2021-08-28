@@ -68,7 +68,7 @@ function showMiddleDiv() {
 
     let searchBar = document.createElement('input');
     searchBar.setAttribute('id', 'search__bar')
-    searchBar.type = 'text';
+    searchBar.type = 'search';
     searchBar.placeholder = 'Find Lipstick, Eyeliner, Makeup Tutorial, etc';
     searchBar.setAttribute('autocomplete', 'on');
     searchBar.oninput = searchFunction;
@@ -136,6 +136,15 @@ showAddDiv();
 
 function searchFunction() {
 
+    let products = JSON.parse(localStorage.getItem("glamm_products"))
+    let searchEntry = document.getElementById("search__bar").value;
+
+    products.forEach(function(ele, n) {
+
+        if(ele.name == searchEntry) {
+            window.location.href = `products/${n}.html`;
+        }
+    })
 }
 
 // below is the function for profile button

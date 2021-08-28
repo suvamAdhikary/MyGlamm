@@ -65,6 +65,7 @@ function showProductDetails() {
             let btn = document.createElement('button');
             btn.setAttribute("class", "addtobag");
             btn.innerText = 'ADD TO BAG';
+            // btn.onclick = addtoCart;
             btn.onclick = function () {
                 addtoCart(product);
             }
