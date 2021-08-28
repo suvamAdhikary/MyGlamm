@@ -41,15 +41,15 @@ collection.href = 'collection.html';
 let rewards = document.createElement('a');
 rewards.setAttribute('id', 'rewards');
 rewards.innerText = "REWARDS";
-rewards.href = 'rewards.html';
+rewards.href = 'referandearn.html';
 
-let myglammStudio = document.createElement('a');
-myglammStudio.setAttribute('id', 'myglamm__studio');
-myglammStudio.innerText = "MYGLAMM STUDIO";
-myglammStudio.href = 'myglammStudio.html';
+let aboutNav = document.createElement('a');
+aboutNav.setAttribute('id', 'about');
+aboutNav.innerText = "ABOUT";
+aboutNav.href = 'about.html';
 
 
-mainNavbar.append(makeup, hairCare, skinCare, sanitizingCare, collection, rewards, myglammStudio);
+mainNavbar.append(makeup, hairCare, skinCare, sanitizingCare, collection, rewards, aboutNav);
 
 header.append(mainNavbar);
 
@@ -73,17 +73,38 @@ function showMiddleDiv() {
     searchBar.setAttribute('autocomplete', 'on');
     searchBar.oninput = searchFunction;
 
+    let refer = document.createElement('a');
+    refer.setAttribute('id', 'refer__earn');
+    refer.innerText = 'Refer & Earn';
+    refer.href = `referandearn.html`;
+
     let bagLink = document.createElement('a');
     bagLink.setAttribute('id', 'bag__link');
     bagLink.href = 'cart.html';
     bagLink.innerHTML = `My Bag`;
 
+
+    // profile button start
+
     let profile = document.createElement('a');
     profile.setAttribute('id', 'profile');
-    profile.onclick = profileFunction;
-    profile.innerHTML = `Profile`;
 
-    middleDiv.append(mainLogo, searchBar, bagLink, profile);
+    Flag = JSON.parse(localStorage.getItem('flag'));
+
+    if (Flag == null) {
+        profile.innerText = 'Signup / Login';
+        profile.href = `user_tel.html`;
+    } else {
+        profile.innerText = 'Logout';
+        profile.href = `index.html`;
+    }
+
+    // profile.onclick = profileFunction;
+    // profile.innerHTML = `Profile`;
+
+    // profile btn end
+
+    middleDiv.append(mainLogo, searchBar, refer, bagLink, profile);
     header.append(middleDiv);
     header.insertBefore(middleDiv, mainNavbar);
 }
@@ -119,6 +140,19 @@ function searchFunction() {
 
 // below is the function for profile button
 
-function profileFunction() {
+// function profileFunction() {
 
-}
+//     let profile = document.getElementById('profile').innerText;
+
+//     Flag = JSON.parse(localStorage.getItem('flag'));
+
+//     if(profile == 'Logout') {
+
+//         profile.textContent = 'Signup / Login';
+//         profile.href = `user_tel.html`;
+
+//         localStorage.setItem('flag', JSON.stringify('null'));
+
+//     }
+// }
+// profileFunction();

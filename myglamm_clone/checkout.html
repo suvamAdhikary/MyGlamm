@@ -7,6 +7,85 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <header></header>
+   <main>
+       <p>Checkout</p>
+       <div>
+           <div id="order__summary">
+               <div>
+                   <p>Total Amount</p>
+                   <p id="checkout__total"></p>
+               </div>
+               <div>
+                   <p>Shipping Charges</p>
+                   <p id="checkout__shipping"></p>
+               </div>
+               <div>
+                   <p>Discount</p>
+                   <p id="checkout__discount"></p>
+               </div>
+               <label for="checkout__promo">Apply Promo Code</label>
+               <div>
+                   <input id="checkout__promo" type="text" placeholder="PROMO CODE">
+                   <button id="promo__button">APPLY</button>
+               </div>
+               <div>
+                   <input id="redeem__glamm--pt" type="checkbox">
+                   <label for="redeem__glamm--pt">Redeem MyGlammXO Points (<span id="glamm__points"></span>) </label>
+               </div>
+               <div>
+                   <p>Amount Payable</p>
+                   <p id="checkout__payable"></p>
+               </div>
+               <div>
+                   <p>You Saved</p>
+                   <p id="checkout__saved"></p>
+               </div>
+               <div>
+                   <p>You will earn</p>
+                   <p id="checkout__earn"></p>
+               </div>
+               <input id="payment__link" type="submit" value="PROCEED TO PAYMENT">
+           </div>
+           <div id="shipping__address">
+               <div>
+                   <input id="is__international" type="checkbox">
+                   <label for="is__international">Shipping Internationally ?</label>
+               </div>
+               <p>SHIPPING ADDRESS</p>
+               <hr>
+               <div id="shipping__address--ch">
+                   <div>
+                       <p id="small__heading"></p>
+                       <p id="small__address"></p>
+                       <p id="small__address2"></pemail >
+                   </div>
+                   <div>
+                       <p id="small__ph"></p>
+                       <p id="small__email"></p>
+                   </div>
+               </div>
+               <button id="address__change--btn">Change</button>
+               <div>
+                   <p>Expected Delivery Date</p>
+                   <p id="expected__delivery--date"></p>
+               </div>
+               <p>BILLING ADDRESS</p>
+               <hr>
+               <div>
+                   <p>Same as Shipping Address</p>
+                   <button id="change__billing--address">Change</button>
+               </div>
+           </div>
+           <div id="your__order">
+               <p>YOUR ORDER</p>
+               <div id="orderd__products"></div>
+           </div>
+       </div>
+       <hr>
+       <p>© MyGlamm</p>
+   </main>
+   <footer></footer> 
 </body>
 </html>
+<script src="checkout.js"></script>

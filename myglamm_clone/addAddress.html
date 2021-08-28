@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header></header>
+   <main>
+       <div>
+           <p>Shipping Address</p>
+           <hr>
+           <form id="signup__form" onsubmit="submitAddress(event)">
+
+            <div>
+                <input id="address__name" type="text" placeholder="Name*" required autofocus autocomplete="name">
+                <span id="address__name--error"></span>
+            
+    
+                <input id="address__tel" type="tel" required autofocus autocomplete="tel">
+                <span id="address__mobile--error"></span>
+    
+    
+                <input id="address__email" type="text" required autofocus autocomplete="email">
+                <span id="address__email--error"></span>
+        
+                <select name="address__type" id="address__type">
+                    <option value="Home">Home</option>
+                    <option value="Office">Office</option>
+                    <option value="Other">Other</option>
+                </select>
+    
+                <input id="address__house--no" type="text" placeholder="Flat no. / House no. / Apt Name*" required autofocus autocomplete="home">  
+                <span id="address__house--error"></span>
+    
+                <input id="address__street--name" type="text" placeholder="Street name*" required autofocus autocomplete="street-address">
+                <span id="address__street--error"></span>
+    
+    
+                <input id="address__neighborhood" type="text" placeholder="Neighborhood*" required autofocus autocomplete="address-level1">
+                <span id="address__neighborhood--error"></span>
+    
+    
+                <input id="address__pincode" type="text" placeholder="Pincode*" required autofocus autocomplete="postal-code">
+                <span id="address__pincode--error"></span>
+    
+    
+                <input id="address__city" type="text" placeholder="City*" required autofocus autocomplete="address-level2">
+                <span id="address__city--error"></span>            
+    
+    
+                <input id="address__state" type="text" placeholder="State*" required autofocus autocomplete="address-level3">
+                <span id="address__state--error"></span> 
+    
+    
+                <input id="address__landmark" type="text" placeholder="Landmark*" autocomplete="address-level4">
+            </div>
+            <div>
+                <input id="mark__default" type="checkbox">
+                <label for="mark__default">Mark as default</label>
+            </div>
+            <input type="submit" placeholder="Create Your Bioscope Account">
+        </form>
+        <button id="backto__bag">BACK</button>
+       </div>
+   </main>
+   <footer></footer>
+</body>
+</html>
+<script src="addAddress.js"></script>

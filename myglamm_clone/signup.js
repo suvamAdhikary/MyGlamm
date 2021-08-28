@@ -47,9 +47,8 @@ let Flag = JSON.parse(localStorage.getItem('flag'))
                     user.forEach(function(ele, n) {
 
                         if(ele.mobile == Flag) {
-                            ele.address.name = userName;
-                            ele.address.email = userEmail;
-                            ele.address.mobile = Flag;
+                            ele.name = userName;
+                            ele.email = userEmail;
                         }
                     })
 

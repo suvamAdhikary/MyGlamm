@@ -55,8 +55,12 @@ function showBag() {
                     let crossBtn = document.createElement('button');
                     crossBtn.innerText = 'X';
 
-                    checkOutLink.href = `checkout.html`;
-            
+                    if(ele.address.length < 1) {
+                        checkOutLink.href = `addAddress.html`;
+                    } else {
+                        checkOutLink.href = `checkout.html`;
+                    }
+
                     div.append(image, p_name, p_price, totalThis, p_t_price, crossBtn);
             
                     bagDiv.append(div);

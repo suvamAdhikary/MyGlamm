@@ -44,18 +44,11 @@ function submitTel(e) {
 
                 countryCode: document.getElementById("country__code").value,
                 mobile: document.getElementById("mobile__no").value,
+                address: [],
                 cart: [],
                 wishlist: [],
-                address: {
-                    name: "",
-                    mobile: "",
-                    email: "",
-                    pincode: "",
-                    city: "",
-                    state: "",
-                    address: "",
-                    landmark: "",
-                }
+                name: "",
+                email: "",
             }
 
 
@@ -72,18 +65,11 @@ function submitTel(e) {
 
                 countryCode: document.getElementById("country__code").value,
                 mobile: document.getElementById("mobile__no").value,
+                address: [],
                 cart: [],
                 wishlist: [],
-                address: {
-                    name: "",
-                    mobile: "",
-                    email: "",
-                    pincode: "",
-                    city: "",
-                    state: "",
-                    address: "",
-                    landmark: "",
-                }
+                name: "",
+                email: "",
             }
 
 
