@@ -1,0 +1,224 @@
+/* * {
+  link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"
+  font-family: 'Noto Sans JP, sans-serif';
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p style=" font-family: 'Noto Sans JP', sans-serif;">
+} */
+.product-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  color: #373738;
+}
+.product-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #909090;
+}
+.product-rating {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #333333;
+}
+.product-ratings {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 0.75rem;
+  color: #333333;
+}
+.search-bar {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #555555;
+}
+.category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #000000;
+}
+.refer-and-earn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+.myglam-store {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: #000000;
+}
+/* //__________________________________signup page */
+
+.signup-topline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #333333;
+}
+.mobile-no {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  color: #000000;
+}
+.continue {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+}
+/* background-color-one:#FEE8E8
+background-color-TWO:#F5F5F6
+background-color-three:#FFFFFF */
+
+.mybag {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+  color: #333333;
+}
+.product-name-in-mybag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.0625rem;
+  color: #333333;
+}
+.product-quantity-in-mybag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #333333;
+}
+.product-name-in-mybag {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.0625rem;
+  color: #333333;
+}
+.proceed-to-checkout {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+.shipping-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #333333;
+}
+.shipping-details {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #555555;
+}
+.continue-back {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #333333;
+}
+
+/* _____________________________LOGO'S OF MYGLAMM__________________________________ */
+
+.m {
+  src: "https://cdn.yellowmessenger.com/xEiulUijEbNF1622637959504.png";
+  width: 150;
+  height: 150;
+}
+.x {
+  src: "https://static.photoslurp.com/widget/v3/images/modern/close-black.svg";
+  width: 0;
+  height: 0;
+}
+/* . > {
+  src: "https://static.photoslurp.com/widget/v3/images/modern/next-black.svg";
+  width: 16;
+  height: 32;
+} */
+.plus {
+  src: "https://static.photoslurp.com/widget/v3/images/modern/plus.svg";
+
+  width: 24;
+  height: 24;
+}
+/* < {
+  src: "https://static.photoslurp.com/widget/v3/images/modern/prev-black.svg";
+  width: 0;
+  height: 0;
+} */
+
+.instagram-in-black {
+  src: "https://static.photoslurp.com/widget/v3/images/providers/instagram-black-three.svg";
+  width: 18;
+  height: 18;
+}
+.loader {
+  src: "https://www.myglamm.com/images/loader.svg";
+  width: 200;
+  height: 200;
+  alt: loader;
+}
+.iosStore {
+  src: "https://www.myglamm.com/images/iosStore.png";
+  width: 238;
+  height: 80;
+  alt: iosStore;
+}
+.profile {
+  src: "https://www.myglamm.com/images/no_user_yellow.png";
+  width: 10;
+  height: 10;
+  alt: user;
+}
+.playstore {
+  src: "https://www.myglamm.com/images/playStore.png";
+  width: 270;
+  height: 80;
+  alt: playStore;
+}
+
+.search {
+  src: "https://www.myglamm.com/images/search.svg";
+  width: 18;
+  height: 18;
+  alt: search;
+}
+.arrowLeft {
+  src: "https://www.myglamm.com/images/slickArrowLeft.svg";
+  width: 100;
+  height: 100;
+  alt: arrowLeft;
+}
+.arrowRight {
+  src: "https://www.myglamm.com/images/slickArrowRight.svg";
+  width: 100;
+  height: 100;
+  alt: arrowRight;
+}

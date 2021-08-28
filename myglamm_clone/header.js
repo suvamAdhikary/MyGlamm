@@ -10,6 +10,7 @@ let mainNavbar = document.createElement('nav');
 
 // below is the function for the navigation bar
 
+
 function showNavbar() {
 
 let makeup = document.createElement('a');
