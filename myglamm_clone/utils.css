@@ -1,8 +1,7 @@
 /* variables */
 
 :root {
-    --font--family-100: @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
-
+    --font-large: 
     --font-small: 0.875rem;  /* 14px */
     --font-mid: 1rem; /* 16px */
 
