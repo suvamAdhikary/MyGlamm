@@ -38,6 +38,7 @@ function displayOrderSummary() {
 
             let checkoutPayable = document.getElementById('checkout__payable');
             checkoutPayable.innerText = `₹ ${total}.00`;
+            localStorage.setItem("payable", JSON.stringify(total));
 
             let checkoutSaved = document.getElementById('checkout__saved')
             checkoutSaved.innerText = `₹ 0.00`;
@@ -141,13 +142,14 @@ if (promoInput === "masai30") {
     
             
     let checkoutDiscount = document.getElementById('checkout__discount');
-    checkoutDiscount.innerText = `₹ ${total * 0.3}.00`;
+    checkoutDiscount.innerText = `₹ ${Math.round(total * 0.3)}.00`;
 
     let checkoutPayable = document.getElementById('checkout__payable');
-    checkoutPayable.innerText = `₹ ${total - (total * 0.3)}.00`;
+    checkoutPayable.innerText = `₹ ${total - Math.round(total * 0.3)}.00`;
+    localStorage.setItem("payable", JSON.stringify(`${total - Math.round(total * 0.3)}`));
 
     let checkoutSaved = document.getElementById('checkout__saved')
-    checkoutSaved.innerText = `₹ ${total * 0.3}.00`;
+    checkoutSaved.innerText = `₹ ${Math.round(total * 0.3)}.00`;
 
     document.getElementById("checkout__promo").value = "";
 
