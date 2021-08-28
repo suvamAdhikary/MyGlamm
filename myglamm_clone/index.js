@@ -23,7 +23,26 @@ const myGlamm_products = [
     ratings: "7",
     category: "HAIR CARE",
   },
-  {},
+  {
+    name: "YOUTHFULL HYDRATING MOISTURISING CREAM WITH WATER BANK TECHNOLOGY",
+    description: "Lightweight Marine Hydrating Moisturising Cream",
+    price: "299",
+    imagesLarge: [
+      " https://files.myglamm.com/site-images/800x800/1627822959419-Moistuirising-Cream-Swatch.jpeg",
+      "https://files.myglamm.com/site-images/800x800/Moistuirising-Cream-Swatch_1.jpg",
+      "https://files.myglamm.com/site-images/800x800/Moistuirisng-Cream-Open.jpg",
+      "https://files.myglamm.com/site-images/800x800/Moistuirisng-Cream-Closed.jpg",
+    ],
+    imagesSmall: [
+      " https://files.myglamm.com/site-images/200x200/1627822959419-Moistuirising-Cream-Swatch.jpeg",
+      "https://files.myglamm.com/site-images/200x200/Moistuirising-Cream-Swatch_1.jpg",
+      "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Open.jpg",
+      "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Closed.jpg",
+    ],
+    rating: "3",
+    ratings: "9",
+    category: "SKIN CARE",
+  },
   {
     name: "MYGLAMM SUPERFOODS ONION & MORINGA HAIR OIL",
     description: "For Hair Fall Control",
@@ -36,7 +55,6 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/800x800/OIl-(6).jpg",
       "https://files.myglamm.com/site-images/800x800/OIl-(5).jpg",
     ],
-
     imagesSmall: [
       "https://files.myglamm.com/site-images/200x200/Oil-Product.jpg",
       "https://files.myglamm.com/site-images/200x200/OIl-(1).jpg",
@@ -45,7 +63,6 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/OIl-(6).jpg",
       "https://files.myglamm.com/site-images/200x200/OIl-(5).jpg",
     ],
-
     rating: "5",
     ratings: "6",
     category: "HAIR CARE",
@@ -70,7 +87,6 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/Serum-(6).jpg",
       "https://files.myglamm.com/site-images/200x200/Serum-(5).jpg",
     ],
-
     rating: "5",
     ratings: "3",
     category: "HAIR CARE",
@@ -92,6 +108,26 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/sangria-12.jpeg",
       "https://files.myglamm.com/site-images/200x200/sangria-2-1.jpeg",
       "https://files.myglamm.com/site-images/200x200/lit-creamy-matte-groupshot-5.jpeg",
+    ],
+    rating: "5",
+    ratings: "7",
+    category: "SKIN CARE",
+  },
+  {
+    name: "YOUTHFULL HYDRATING MOISTURISING LOTION WITH WATER BANK TECHNOLOGY",
+    description: "Marine Rich Hydrating Body Lotion with Hyaluronic Acid",
+    price: "995",
+    imagesLarge: [
+      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Swatch.jpg",
+      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Swatch_1.jpg",
+      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Open.jpg",
+      "https://files.myglamm.com/site-images/800x800/Body-Lotion-Closed.jpg",
+    ],
+    imagesSmall: [
+      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Swatch.jpg",
+      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Swatch_1.jpg",
+      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Open.jpg",
+      "https://files.myglamm.com/site-images/200x200/Body-Lotion-Closed.jpg",
     ],
     rating: "5",
     ratings: "7",
@@ -139,9 +175,29 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/Moistuirisng-Cream-Closed.jpg",
       "https://files.myglamm.com/site-images/200x200/vegan_105.jpeg",
     ],
-
     rating: "5",
     ratings: "8",
+    category: "SKIN CARE",
+  },
+  {
+    name: "GLOW IRIDESCENT BRIGHTENING BODY LOTION",
+    description: "Rosehip Oil-infused Illuminating Body Lotion",
+    price: "1198",
+    imagesLarge: [
+      "https://files.myglamm.com/site-images/800x800/BODY-LOTION.jpg",
+      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
+      "https://files.myglamm.com/site-images/800x800/A46A9685_1.jpg",
+      "https://files.myglamm.com/site-images/800x800/body-lotion-1.jpeg",
+    ],
+    imagesSmall: [
+      "https://files.myglamm.com/site-images/200x200/BODY-LOTION.jpg",
+      "https://i.ytimg.com/vi/y-aCeWt3sLI/hqdefault.jpg",
+      "https://files.myglamm.com/site-images/200x200/A46A9685_1.jpg",
+      "https://files.myglamm.com/site-images/200x200/body-lotion-1.jpeg",
+    ],
+
+    rating: "5",
+    ratings: "31",
     category: "SKIN CARE",
   },
   {
@@ -206,7 +262,6 @@ const myGlamm_products = [
     ratings: "46",
     category: "SANITIZING CARE",
   },
-
   {
     name: "POSE HD FOUNDATION STICK - WARM SAND",
     description: "Nourishing, Matte, Skin-blurring Foundation",
@@ -229,7 +284,6 @@ const myGlamm_products = [
     ratings: "3",
     category: "MAKEUP",
   },
-
   {
     name: "JET SET EYES KAJAL EYELINER - NOIR",
     description: "Long-wear Kohl Pencil",
@@ -268,20 +322,36 @@ const myGlamm_products = [
       "https://files.myglamm.com/site-images/200x200/kplay-mandarin-brightening-sheet-mask-1.jpeg",
       "https://files.myglamm.com/site-images/200x200/sheet-mask-2.jpeg",
     ],
-
     rating: "4.8",
     ratings: "36",
     category: "MAKEUP",
+  },
+  {
+    name: "MANISH MALHOTRA SANDALWOOD SPF 25 GEL",
+    description: "Gel-based Natural Sunscreen With SPF",
+    price: "945",
+    imagesLarge: [
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_2.jpg",
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_3.jpg",
+      "https://files.myglamm.com/site-images/800x800/SANDALWOOD-SPF-25-GEL_4.jpg",
+      "https://files.myglamm.com/site-images/800x800/Sandalwood_2.jpg",
+    ],
+    imagesSmall: [
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_2.jpg",
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_3.jpg",
+      "https://files.myglamm.com/site-images/200x200/SANDALWOOD-SPF-25-GEL_4.jpg",
+      "https://files.myglamm.com/site-images/200x200/Sandalwood_2.jpg",
+    ],
+    rating: "4.9",
+    ratings: "16",
+    category: "SKINCARE",
   },
 ];
 
 const myGlamm_products_json = JSON.stringify(myGlamm_products);
 localStorage.setItem("glamm_products", myGlamm_products_json);
-
 let myProducts = localStorage.getItem("glamm_products");
-
 myProducts = JSON.parse(myProducts);
-
 let data_div = document.getElementById("home__products");
 function showProducts() {
   myProducts.forEach(function (product, n) {
@@ -289,22 +359,26 @@ function showProducts() {
     div.onclick = function () {
       window.location.assign(`products/${n}.html`);
     };
-
     let p_name = document.createElement("p");
     p_name.innerText = product.name;
-
     let p_description = document.createElement("p");
     p_description.innerText = product.description;
-
     let p_price = document.createElement("p");
     p_price.innerText = "₹ " + product.price;
-
     let image = document.createElement("img");
     image.src = product.imagesSmall[0];
-
     div.append(image, p_name, p_description, p_price);
-
     data_div.append(div);
   });
 }
 showProducts();
+
+
+if(localStorage.getItem("flag") === null) {
+  localStorage.setItem("flag", JSON.stringify(null));
+}
+
+
+if(localStorage.getItem("glammUsers") === null) {
+  localStorage.setItem("glammUsers", JSON.stringify([]));
+}
