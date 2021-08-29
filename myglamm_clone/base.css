@@ -66,12 +66,17 @@ a, a:visited, a:hover {
 main {
     position: relative;
     top: 160px;
-    background-color: #F5F5F6;
+    background-color: var(--bg-color-main);
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    height: fit-content;
 }
 
-/* body {
+body {
 
     display: flex;
-    flex-grow: column;
-    justify-content: space-between;    
-} */
+    flex-direction: column;
+    /* flex-grow: column; */
+    /* justify-content: space-between;     */
+}
