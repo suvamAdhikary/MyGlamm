@@ -9,6 +9,7 @@ function showProducts() {
     if( product.category == "SKIN CARE") {
 
         let div = document.createElement("div");
+        div.setAttribute("class","product-box")
         div.onclick = function () {
           window.location.assign(`products/${n}.html`);
         };

@@ -1,0 +1,46 @@
+main{
+    padding-right: 10%;
+    padding-left: 10%;
+
+   
+}
+
+#skin__products{
+   display: grid;
+   grid-template-columns: 31% 31% 31%;
+   margin: 1%;
+   margin-left: 10%;
+   margin-top: 5%;
+
+}
+h3{
+    text-align: center;
+   
+    text-decoration: underline 5px rgb(253, 171, 185);
+    
+    font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.3125rem;
+  color: #333333;
+  
+}
+p{
+    font-style: normal;
+  font-weight: 300;
+  font-size: 1rem !important;
+  line-height: 1.125rem;
+  color: #333333;
+  
+}
+.product-box{
+
+    padding:2%;
+    border: 2px solid rgba(0, 0,0, 0.2);
+    margin: 1rem;
+}
+.product-box>img{
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 1rem;
+}

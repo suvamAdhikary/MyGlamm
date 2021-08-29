@@ -9,6 +9,8 @@ function showProducts() {
     if( product.category == "HAIR CARE") {
 
         let div = document.createElement("div");
+        div.setAttribute("class", "product-box");
+
         div.onclick = function () {
           window.location.assign(`products/${n}.html`);
         };
