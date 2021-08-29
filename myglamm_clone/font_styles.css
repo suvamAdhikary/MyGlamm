@@ -66,6 +66,14 @@
   line-height: 1.75rem;
   color: #000000;
 }
+.myglam__store--city {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #909090;
+}
+
 /* //__________________________________signup page */
 
 .signup__topline {
@@ -147,6 +155,151 @@ background-color-three:#FFFFFF */
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #333333;
+}
+/* _________________________________CHECKOUT PAGE_________________________________ */
+.checkout {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  color: #333333;
+}
+
+.shipping__internationally {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #000000;
+}
+.shipping__address {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #333333;
+}
+.shipping__name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #333333;
+}
+.shipping__address--details {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #333333;
+}
+.change__button {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+.billing__address {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #333333;
+}
+.order__summary {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.9375rem;
+  color: #333333;
+}
+.below__order--summary {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #292929;
+}
+.apply__promocode {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.9375rem;
+  color: #333333;
+}
+.apply__button {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+.promocode {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #333333;
+}
+.redeem__myglam--points {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #292929;
+}
+.amount__payable {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #292929;
+}
+.amount__payable--inNumber {
+  font-weight: 600;
+  font-size: 1.1875rem;
+  line-height: 1.6875rem;
+  color: #000000;
+}
+.amount__payable--below {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #292929;
+}
+.proceed__payment {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  background-color: #000000;
+}
+/* _________________________________PAYMENT PAGE___________________ */
+
+.payment {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  color: #333333;
+}
+.amount__payable {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.1875;
+  color: #000000;
+}
+.cardholder__name--validityCvv {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+}
+.card__details {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.1375;
+  color: #555555;
+}
+.payment__method {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #333333;
+}
+.payment__method--types {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #000000;
 }
 
 /* _____________________________LOGO'S OF MYGLAMM__________________________________ */
@@ -241,3 +394,13 @@ background-color-three:#FFFFFF */
 /* mail{
   <i class="icon icon-letter-mail"></i>
 } */
+
+/* .bag{
+<i class="ico icon-bag" style="float: left; font-size: 23px; line-height: 1.8;"></i>
+} */
+
+/* CREDIT/DEBIT CARD    <i class="ico icon-credit-card"></i> */
+
+/* UPI <img src="https://files.myglamm.com/images/static/upi.png"> */
+
+/* WALLETS/CASH ON DELIVERY<i class="ico icon-cash"></i> */
