@@ -172,8 +172,8 @@ background-color-three:#FFFFFF */
 }
 .shipping__address {
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: #333333;
 }
 .shipping__name {
