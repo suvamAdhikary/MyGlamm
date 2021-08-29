@@ -10,20 +10,22 @@
     <link rel="shortcut icon" href="https://www.myglamm.com/favicon.ico">
     <title>Signup</title>
     <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
     <header></header>
     <main>
-        <p class="headP">VERIFY YOUR PHONE NUMBER</p>
+        <p class="headP">VERIFY YOUR PHONE NUMBER TO COMPLETE YOUR REGISTRATION</p>
         <p id="signup__display--phone"></p>
 
         <input type="password" id="signup__otp" autofocus required>
 
         <form id="form__signup">
-            <label  for="signup__name">Name</label>    
+            <label id="nameLabel" for="signup__name">Name</label>    
+            
+            <label id = "emailLabel"for="signup__email">Email</label>
             <input id = "signup__name" type="text" placeholder="*Full Name" required autofocus autocomplete="name">
 
-            <label for="signup__email">Email</label>
             <input id = "signup__email" type="email" placeholder="*Email Address" required autofocus autocomplete="email">
 
             <button id="signup__verify">VERIFY</button>
