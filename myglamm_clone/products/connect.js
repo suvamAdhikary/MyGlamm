@@ -11,7 +11,7 @@ let sanitizingCare = document.getElementById('sanitizing__care');
 sanitizingCare.href = '../sanitizingCare.html';
 
 let collection = document.getElementById('collection');
-collection.href = '../collection.html';
+collection.href = '../termsAndConditions.html';
 
 let rewards = document.getElementById('rewards');
 rewards.href = '../referandearn.html';
@@ -38,7 +38,7 @@ if(profile.href == `user_tel.html`) {
 }
 
 let topLeft = document.getElementById('shop__now');
-topLeft.href = '../shopNow.html';
+topLeft.href = '../comingsoon.html';
 
 let topRight = document.getElementById('myglamm__store');
 topRight.href = '../myglammStoreLocator.html';

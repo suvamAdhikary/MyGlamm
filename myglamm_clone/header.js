@@ -35,8 +35,8 @@ sanitizingCare.href = 'sanitizingCare.html';
 
 let collection = document.createElement('a');
 collection.setAttribute('id', 'collection');
-collection.innerText = "COLLECTION";
-collection.href = 'collection.html';
+collection.innerText = "TERMS & CONDITION";
+collection.href = 'termsAndConditions.html';
 
 let rewards = document.createElement('a');
 rewards.setAttribute('id', 'rewards');
@@ -117,7 +117,7 @@ function showAddDiv() {
 
     let topLeft = document.createElement("a");
     topLeft.setAttribute("id", "shop__now");
-    topLeft.href = 'shopNow.html';
+    topLeft.href = 'comingsoon.html';
     topLeft.innerHTML = `SHOP NOW`;
 
     let topRight = document.createElement("a");
