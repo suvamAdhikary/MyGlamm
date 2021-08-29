@@ -106,6 +106,7 @@ function displayOrderdProduct() {
 
             ele.cart.forEach(function(product) {        
                 let div = document.createElement("div");
+                div.setAttribute("class","productCheck");
 
                 let p_name = document.createElement("p")
                 p_name.innerText = `${product.name}`;

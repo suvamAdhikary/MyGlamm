@@ -79,6 +79,7 @@ function showBag() {
             let div = document.createElement("div");
     
             let p_name = document.createElement("p");
+            p_name.setAttribute("class", "cart__product--name");
             p_name.innerText = product.name;
     
             let p_price = document.createElement("p");
