@@ -75,8 +75,8 @@ input:hover {
     height: 20px;
     width: 20px;
     border-radius: 3px;
-    border: 1px solid #d2d2d5;
+    border: 1px solid #dedee4;
 }
 #mark__default:hover {
-    
+    /* border-color: #000000; */
 }
