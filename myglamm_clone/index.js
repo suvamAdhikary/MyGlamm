@@ -356,16 +356,21 @@ let data_div = document.getElementById("home__products");
 function showProducts() {
   myProducts.forEach(function (product, n) {
     let div = document.createElement("div");
+    div.setAttribute("class", "home__singleProduct--container");
     div.onclick = function () {
       window.location.assign(`products/${n}.html`);
     };
     let p_name = document.createElement("p");
+    p_name.setAttribute("class", "home__product--name");
     p_name.innerText = product.name;
     let p_description = document.createElement("p");
+    p_description.setAttribute("class", "home__product--description");
     p_description.innerText = product.description;
     let p_price = document.createElement("p");
+    p_price.setAttribute("class", "home__product--price");
     p_price.innerText = "₹ " + product.price;
     let image = document.createElement("img");
+    image.setAttribute("class", "home__product--image");
     image.src = product.imagesSmall[0];
     div.append(image, p_name, p_description, p_price);
     data_div.append(div);
@@ -373,12 +378,10 @@ function showProducts() {
 }
 showProducts();
 
-
-if(localStorage.getItem("flag") === null) {
+if (localStorage.getItem("flag") === null) {
   localStorage.setItem("flag", JSON.stringify(null));
 }
 
-
-if(localStorage.getItem("glammUsers") === null) {
+if (localStorage.getItem("glammUsers") === null) {
   localStorage.setItem("glammUsers", JSON.stringify([]));
 }

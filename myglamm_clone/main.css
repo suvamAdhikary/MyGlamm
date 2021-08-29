@@ -1,21 +1,20 @@
 /* main.css */
 
 /* base */
-@import 'base.css';
+@import "base.css";
 
 /* layout */
-@import 'header.css';
+@import "header.css";
 
 /* components */
 /* @import 'button.css'; */
 
 /* pages */
-@import 'home.css';
+/* @import 'home.css'; */
 /* @import 'signup.css'; */
 
 /* utils */
-@import 'utils.css';
-
+@import "utils.css";
 
 /* #payment__card {
 
