@@ -13,22 +13,32 @@ function forCard() {
 
     let crdForm = document.createElement('form');
     crdForm.innerHTML = `
-        <lebel for="card__number">Card Number</lebel>
+        <div class="pay__form--cont">
+        <label for="card__number">Card Number</label>
         <input id="card__number" type="text" placeholder="XXXX - XXXX - XXXX - XXXX" required autofocous>
+        </div>
         <p id="card__number--error"></p>
+        
 
-        <lebel for="cardholder__name">Cardholder’s Name</lebel>
+        <div class="pay__form--cont">
+        <label for="cardholder__name">Cardholder’s Name</label>
         <input id="cardholder__name" type="text" placeholder="eg. Jennifer Gomes" required autofocous>
+        </div>
         <p id="cardholder__name--error"></p>
 
-        <div>
-        <lebel for="validity__till">Validity till</lebel>
+
+        <div class="pay__form--cont">
+        <div id="card__dates">
+        <label for="validity__till">Validity till</label>
         <input id="validity__till--mm" type="text" placeholder="MM" required autofocous>
         <input id="validity__till--yy" type="text" placeholder="YY" required autofocous>
         </div>
 
-        <lebel for="cvv">CVV</lebel>
+        <div>
+        <label for="cvv">CVV</label>
         <input id="cvv" type="password" placeholder="* * *" required autofocous>
+        </div>
+        </div>
 
         <input id="proceed__btn" type="submit" value="PROCEED TO PAY">
     `;
