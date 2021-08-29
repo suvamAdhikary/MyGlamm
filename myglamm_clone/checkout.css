@@ -42,6 +42,11 @@ main > div {
     padding-left: 4%;
     padding-right: 4%;
 }
+
+
+
+/* Order Summary */
+
 .os__flex__container {
     width: 100%;
     display: flex;
@@ -51,9 +56,13 @@ main > div {
     flex-wrap: wrap;
     height: 20%;
 }
-/* #checkout__promo--container {
-    justify-content: stretch !important;
-} */
+#order__summary > div {
+    margin: 1%;
+}
+#checkout__promo--container {
+    height: 30%;
+
+}
 #promo__heading {
     height: 15%;
     margin-bottom: 0 !important;
@@ -69,14 +78,72 @@ main > div {
     display: flex;
     margin-top: 1%;
 }
-#checkout__promo--container {
+
+/* #checkout__promo--container {
     
 }
 #checkout__promo {
-}
+
+} */
 #payment__link {
-    height: 20%;
+    height: 30%;
     width: 100%;
     background-color: #000000;
     color: #FFFFFF;
+}
+#redeem__glamm--pt {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: 1px solid #dedee4;
+}
+
+
+
+/* Shipping Address */
+
+#address__change--btn {
+    height: 40px;
+    width: 30%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#is__international {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: 1px solid #dedee4;
+    border-radius: 10px;
+}
+/* #shipping__internationally {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #000000;
+} */
+/* #shipping__address--ch {
+    font-weight: 100;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #333333;
+} */
+
+/* Orderd products */
+
+#orderd__products {
+    display: flex;
+    flex-direction: column;
+}
+
+#orderd__products > div {
+    width:700px;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin: 1%;
+    border-top: solid 1px var(--bg-color-main);
+    justify-content: space-between;
+}
+img {
+    height: 100%;
 }

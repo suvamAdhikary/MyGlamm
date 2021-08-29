@@ -1,0 +1,20 @@
+main {
+    background-color: #FFFFFF;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#payment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#payment-container > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
