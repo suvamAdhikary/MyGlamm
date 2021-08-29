@@ -360,13 +360,13 @@ function showProducts() {
     div.onclick = function () {
       window.location.assign(`products/${n}.html`);
     };
-    let p_name = document.createElement("p");
+    let p_name = document.createElement("h5");
     p_name.setAttribute("class", "home__product--name");
     p_name.innerText = product.name;
     let p_description = document.createElement("p");
     p_description.setAttribute("class", "home__product--description");
     p_description.innerText = product.description;
-    let p_price = document.createElement("p");
+    let p_price = document.createElement("h5");
     p_price.setAttribute("class", "home__product--price");
     p_price.innerText = "₹ " + product.price;
     let image = document.createElement("img");
