@@ -1,0 +1,62 @@
+main {
+  padding: 10%;
+}
+.myglam__store {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: #000000;
+}
+.myglam__store--city {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #909090;
+}
+.city {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #909090;
+  text-align: center;
+}
+.city__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #909090;
+  text-align: center;
+}
+.address__container {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 5%;
+}
+.address__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #333333;
+  text-align: center;
+}
+.address__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  color: #bf9b30;
+  text-align: center;
+}
+.address__details {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333333;
+  text-align: center;
+}

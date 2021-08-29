@@ -3,28 +3,28 @@
   font-family: 'Noto Sans JP, sans-serif';
 
 } */
-.product-name {
+.product__name {
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.625rem;
   color: #373738;
 }
-.product-description {
+.product__description {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.125rem;
   color: #909090;
 }
-.product-rating {
+.product__rating {
   font-style: normal;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: #333333;
 }
-.product-ratings {
+.product__ratings {
   font-style: normal;
   font-weight: 100;
   font-size: 1rem;
@@ -45,14 +45,21 @@
   line-height: 1.25rem;
   color: #000000;
 }
-.refer-and-earn {
+.category__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.3125rem;
+  color: #333333;
+}
+.refer__and--earn {
   font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.5rem;
   color: #ffffff;
 }
-.myglam-store {
+.myglam__store {
   font-style: normal;
   font-weight: 600;
   font-size: 0.875rem;
@@ -61,14 +68,14 @@
 }
 /* //__________________________________signup page */
 
-.signup-topline {
+.signup__topline {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #333333;
 }
-.mobile-no {
+.mobile__no {
   font-style: normal;
   font-weight: 600;
   font-size: 0.75rem;
@@ -93,49 +100,49 @@ background-color-three:#FFFFFF */
   line-height: 2.0625rem;
   color: #333333;
 }
-.product-name-in-mybag {
+.product__name--inMybag {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.0625rem;
   color: #333333;
 }
-.product-quantity-in-mybag {
+.product__quantity--inMybag {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4375rem;
   color: #333333;
 }
-.product-name-in-mybag {
+.product__name--inMybag {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.0625rem;
   color: #333333;
 }
-.proceed-to-checkout {
+.proceed__to--checkout {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #ffffff;
 }
-.shipping-heading {
+.shipping__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.125rem;
   color: #333333;
 }
-.shipping-details {
+.shipping__details {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.4375rem;
   color: #555555;
 }
-.continue-back {
+.continue__back {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -219,3 +226,18 @@ background-color-three:#FFFFFF */
   height: 100;
   alt: arrowRight;
 }
+/* .star{
+  <i class="ico-star icon-star"></i>
+} */
+
+/* .m__black--logo{
+  <i class="icon icon-mlogo"></i>
+} */
+
+/* .phone{
+  <i class="icon icon-ios-telephone"></i>
+} */
+
+/* mail{
+  <i class="icon icon-letter-mail"></i>
+} */
