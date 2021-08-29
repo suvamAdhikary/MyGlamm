@@ -1,0 +1,43 @@
+main{
+    border: 1px solid black;
+    width: 50%;
+    height: 30rem;
+    margin: auto;
+    background-color: white;
+}
+
+#login__{
+    text-align: center;
+    color: rgb(0, 0, 0,0.7);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main>img{
+    margin-left: 17rem;
+}
+#login__display--phone{
+
+
+   text-align: center;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0,0.7);
+}
+#login__otp{
+
+    margin-left:17rem ;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 16rem;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+#login__verify{
+
+   margin-left: 11rem;
+   width: 24rem;
+   height: 2.3rem;
+   background-color: black;
+   color: white;
+}
