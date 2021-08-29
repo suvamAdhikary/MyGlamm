@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.myglamm.com/favicon.ico">
     <title>Signup & Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header>
+        <button id="closeBtn">X</button>
+        <p class="paragraph">Get 15% MyGlammXO Points back on every order</p>
+        <img class="glamImg" src="https://www.myglamm.com/images/myglamm-logo.png" alt="">
+    </header>
     <main>
         <div><p>Mobile Number</p></div>
         <form id="mobile__info" onsubmit="submitTel(event)">
@@ -242,7 +247,18 @@
             <input type="submit" value="CONTINUE">
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <div></div>
+            <p>or continue with</p>
+            <div></div>
+        </div>
+        <div>
+            <div><img id="ph__page--fbImg" src="https://www.myglamm.com/images/facebook.png"> <h6>continue with facebook</h6></div>
+            <div><img id="ph__page--googleImg" src="https://www.myglamm.com/images/ico-google.png"><h6>continue with google</h6></div>
+        </div>
+        <p>By Signing up you agree to our <a href="termsAndConditions.html">Terms & Conditions</a></p>
+    </footer>
 </body>
 </html>
 <script src="userTel.js"></script>

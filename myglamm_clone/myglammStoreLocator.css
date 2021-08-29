@@ -1,5 +1,6 @@
 main {
-  padding: 10%;
+  padding: 0 10% !important;
+  background-color: #ffffff !important;
 }
 .myglam__store {
   font-style: normal;
@@ -30,6 +31,7 @@ main {
   line-height: 1.125rem;
   color: #909090;
   text-align: center;
+  padding: 2% !important ;
 }
 .address__container {
   display: grid;
@@ -49,8 +51,9 @@ main {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4375rem;
-  color: #bf9b30;
+  color: #bf9b30 !important ;
   text-align: center;
+  padding: 10% !important;
 }
 .address__details {
   font-style: normal;
@@ -59,4 +62,5 @@ main {
   line-height: 1.5rem;
   color: #333333;
   text-align: center;
+  padding-bottom: 15% !important;
 }

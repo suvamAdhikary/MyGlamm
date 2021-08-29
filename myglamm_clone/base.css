@@ -58,6 +58,25 @@ p {
 }
 
 a, a:visited, a:hover {
+    color: #000000;
     text-decoration: none;
     margin-right: 32px;
+}
+
+main {
+    position: relative;
+    top: 160px;
+    background-color: var(--bg-color-main);
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    height: fit-content;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: column; */
+    /* justify-content: space-between;     */
 }

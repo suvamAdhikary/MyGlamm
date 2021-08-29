@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.myglamm.com/favicon.ico">
     <title>Select Address</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="addAddress.css">
 </head>
 <body>
    <header></header>
+   <script src="header.js"></script>
    <main>
-       <div>
+       <!-- <div> -->
            <p>Shipping Address</p>
            <hr>
            <form id="signup__form" onsubmit="submitAddress(event)">
 
-            <div>
+            <div id="addrs__flex--cont">
                 <input id="address__name" type="text" placeholder="Name*" required autofocus autocomplete="name">
                 <span id="address__name--error"></span>
             
@@ -60,14 +64,17 @@
     
                 <input id="address__landmark" type="text" placeholder="Landmark*" autocomplete="address-level4">
             </div>
-            <div>
-                <input id="mark__default" type="checkbox">
+            <div class="adrs__flex--left">
                 <label for="mark__default">Mark as default</label>
+                <input id="mark__default" type="checkbox">
             </div>
-            <input type="submit" placeholder="Create Your Bioscope Account">
+            <div  class="adrs__flex--left">
+                <input id="address__submit" type="submit" value="CONTINUE">
+                <button id="backto__bag">BACK</button>            
+            </div>
         </form>
-        <button id="backto__bag">BACK</button>
-       </div>
+        
+       <!-- </div> -->
    </main>
    <footer></footer>
 </body>

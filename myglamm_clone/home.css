@@ -1,7 +1,21 @@
+#landing__main {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-grow: 100; */
+    padding: 1% 10%;
+    /* flex-basis: auto; */
+}
+
 #home__products {
+    /* display: flex;
+    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    grid-gap: 5%;
+    /* grid-template-rows: repeat(5, auto); */
+    grid-gap: 3%;
+    /* flex-basis: auto; */
 }
 
 #home__products div{
