@@ -81,7 +81,7 @@ function showMiddleDiv() {
     let bagLink = document.createElement('a');
     bagLink.setAttribute('id', 'bag__link');
     bagLink.href = 'cart.html';
-    bagLink.innerHTML = `My Bag<div id=bag__count></div>`;
+    bagLink.innerHTML = `<span class="material-icons-outlined">shopping_cart<span id=bag__count></span></span>`;
 
 
     // profile button start
@@ -183,9 +183,9 @@ function showBagCount() {
     let div = document.getElementById("bag__count");
     let Flag = JSON.parse(localStorage.getItem('flag'));
     var currentCart;
-    console.log(Flag);
+
     if (Flag != null) {
-        console.log("in");
+
         currentCart = JSON.parse(localStorage.getItem('glammUsers'))
 
         var count;
@@ -193,7 +193,13 @@ function showBagCount() {
         currentCart.forEach(({mobile, cart}) => {
 
             if(Flag == mobile) {
-                count = cart.length;
+                let temp = 0;
+                cart.forEach(({quantity}) => {
+                    temp+=quantity;
+                })
+                if(temp > 0) {
+                    count = temp;
+                }
             }
 
         })
@@ -201,7 +207,13 @@ function showBagCount() {
     } else {
         currentCart = JSON.parse(localStorage.getItem('glammBag'))
 
-        count = currentCart.length;
+        let temp = 0;
+        currentCart.forEach(({quantity}) => {
+            temp+=quantity;
+        })
+        if(temp > 0) {
+            count = temp;
+        }
     }
 
     if (count > 0) {
