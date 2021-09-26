@@ -40,3 +40,60 @@
 
 ### Screenshots :camera:
 
+- **Home Page**
+
+![Home Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/home1.png)
+![Home Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/home2.png)
+
+
+- **About Page**
+
+![About Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/about.png)
+
+
+- **Step before SignUp/LogIn**
+
+![OTP Sent Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/otp.png)
+
+
+- **SignUp Page**
+
+![Sign Up Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/signup.png)
+
+
+- **LogIn Page**
+
+![Log In Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/login.png)
+
+
+- **Sample of Product Category Page**
+
+![Product Category Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/category.png)
+
+- **Single Product page**
+
+![Single Product Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/singleproduct.png)
+
+- **Bag Page**
+
+![Bag Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/bag.png)
+
+- **Add Address Page**
+
+![Add Address Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/address.png)
+
+- **Checkout Page**
+
+![Checkout Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/checkout.png)
+
+- **Payment Page**
+
+![Payment Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/payment.png)
+
+
+- **Store Locator Page**
+
+![Order Successful Page](https://github.com/suvamAdhikary/projectMyGlamm_clone/blob/main/Screen%20Shots/storlocator.png)
+
+
+---
