@@ -81,7 +81,7 @@ function showMiddleDiv() {
     let bagLink = document.createElement('a');
     bagLink.setAttribute('id', 'bag__link');
     bagLink.href = 'cart.html';
-    bagLink.innerHTML = `My Bag`;
+    bagLink.innerHTML = `My Bag<div id=bag__count></div>`;
 
 
     // profile button start
@@ -98,6 +98,15 @@ function showMiddleDiv() {
         profile.innerText = 'Logout';
         profile.href = `index.html`;
     }
+
+    profile.onclick = function () {
+        if(profile.innerText == 'Logout'){
+            Flag = null;
+            localStorage.setItem('flag', JSON.stringify(Flag));
+            location.reload();
+        }
+    }
+
 
     // profile.onclick = profileFunction;
     // profile.innerHTML = `Profile`;
@@ -165,3 +174,38 @@ function searchFunction() {
 //     }
 // }
 // profileFunction();
+
+
+// Below is the show bag count function for
+
+function showBagCount() {
+    
+    let div = document.getElementById("bag__count");
+    let Flag = JSON.parse(localStorage.getItem('flag'));
+    var currentCart;
+    console.log(Flag);
+    if (Flag != null) {
+        console.log("in");
+        currentCart = JSON.parse(localStorage.getItem('glammUsers'))
+
+        var count;
+
+        currentCart.forEach(({mobile, cart}) => {
+
+            if(Flag == mobile) {
+                count = cart.length;
+            }
+
+        })
+
+    } else {
+        currentCart = JSON.parse(localStorage.getItem('glammBag'))
+
+        count = currentCart.length;
+    }
+
+    if (count > 0) {
+        div.innerHTML = count;
+    }
+}
+showBagCount();
