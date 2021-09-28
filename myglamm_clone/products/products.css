@@ -55,3 +55,19 @@ p{
   line-height: 1.625rem;
   color: #333333;
 }
+
+#slider{
+    max-width: 280px;
+    display: flex;
+    overflow: hidden; 
+}
+
+#sliderOut{
+    max-width: 500px;
+    display: flex;
+}
+#thumbnails{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

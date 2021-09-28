@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.myglamm.com/favicon.ico">
-    <title>Buy SUPERFOODS Onion & Moringa Shampoo Online at Best Price - MyGlamm</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
-    <header></header>
-    <script src="../javascript/header.js"></script>
-    <script src="../javascript/connect.js"></script>
-    <main id="mainImgDiv">
-        <div id="img__container" class="image__container">
-            <div id="image__slider"></div>
-            <div id="image__onfocous"></div>
-        </div>
-        <div id="details__container" class="dtls__container">
-    
-        </div>
-    </main>
-    <footer></footer>
-</body>
-</html>
-<script>
-    let imgSlider = document.getElementById("image__slider");
+let imgSlider = document.getElementById("image__slider");
     let imgOnFocuse = document.getElementById("image__onfocous")
     let detailsDiv = document.getElementById("details__container");
 
@@ -46,7 +13,7 @@ function showProductDetails() {
     
     myProducts.forEach(function(product, n) {
  
-        if(n == 7) {
+        if(n == 0) {
 
             let p_name = document.createElement('h2');
             p_name.setAttribute('class', 'product__name');
@@ -70,6 +37,7 @@ function showProductDetails() {
             let btn = document.createElement('button');
             btn.setAttribute("class", "addtobag");
             btn.innerText = 'ADD TO BAG';
+            // btn.onclick = addtoCart;
             btn.onclick = function () {
                 addtoCart(product);
             }
@@ -88,7 +56,7 @@ function showProductImages() {
     
     myProducts.forEach(function(product, n) {
  
-        if(n == 7) {
+        if(n == 0) {
 
             let div = document.createElement('div');
 
@@ -112,13 +80,10 @@ showProductImages();
 
 
 
-let pics = myProducts[7].imagesSmall;
-
+let pics = myProducts[0].imagesSmall;
 
 
 let mainDiv = document.getElementById("mainImgDiv");
-
-
 let imageSlider = document.createElement("div");
 imageSlider.setAttribute("id","sliderOut");
 
@@ -133,16 +98,7 @@ rightImgSlide.src = "https://www.myglamm.com/images/slickArrowRight.svg";
 rightImgSlide.setAttribute("id","rtSlide");
 leftImgSlide.setAttribute("id","ltSlide");
 
-
 imageSlider.append(leftImgSlide);
-imageSlider.style.maxWidth = "500px";
-imageSliderIn.style.maxWidth = "280px";
-
-imageSliderIn.style.display = "flex";
-
- imageSlider.style.display = "flex";
-imageSliderIn.style.overflowX = "hidden";
-
 
 
 
@@ -152,12 +108,9 @@ imageSliderIn.style.overflowX = "hidden";
 
 let picture = document.createElement("img");
 picture.setAttribute("id", "thumbnails");
-picture.setAttribute("class","active");
-picture.src = pics[0];
-picture.style.width = "100px";
-picture.style.height = "100px";
 
-picture.style.margin = "5px";
+picture.src = pics[0];
+
 picture.addEventListener("mouseover", function(){
      featuredImg.src = picture.src;
 })
@@ -167,13 +120,9 @@ imageSliderIn.append(picture);
 
 let picture2 = document.createElement("img");
 picture2.setAttribute("id", "thumbnails");
-picture2.setAttribute("class","active");
+
 picture2.src = pics[1];
-picture2.style.width = "100px";
 
-
-picture2.style.height = "100px";
-picture2.style.margin = "5px";
 picture2.addEventListener("mouseover", function(){
      featuredImg.src = picture2.src;
 })
@@ -181,15 +130,11 @@ imageSliderIn.append(picture2);
 
 
 
-
 let picture3 = document.createElement("img");
 picture3.setAttribute("id", "thumbnails");
-picture3.setAttribute("class","active");
-picture3.src = pics[2];
-picture3.style.width = "100px";
-picture3.style.height = "100px";
 
-picture3.style.margin = "5px";
+picture3.src = pics[2];
+
 picture3.addEventListener("mouseover", function(){
      featuredImg.src = picture3.src;
 })
@@ -197,15 +142,11 @@ picture3.addEventListener("mouseover", function(){
 imageSliderIn.append(picture3);
 
 
-
 let picture4 = document.createElement("img");
 picture4.setAttribute("id", "thumbnails");
-picture4.setAttribute("class","active");
-picture4.src = pics[3];
-picture4.style.width = "100px";
-picture4.style.height = "100px";
 
-picture4.style.margin = "5px";
+picture4.src = pics[3];
+
 picture4.addEventListener("mouseover", function(){
      featuredImg.src = picture4.src;
 })
@@ -215,28 +156,18 @@ imageSliderIn.append(picture4);
 
 let picture5 = document.createElement("img");
 picture5.setAttribute("id", "thumbnails");
-picture5.setAttribute("class","active");
-picture5.src = pics[4];
-picture5.style.width = "100px";
-picture5.style.height = "100px";
 
-picture5.style.margin = "5px";
+picture5.src = pics[4];
+
 picture5.addEventListener("mouseover", function(){
      featuredImg.src = picture5.src;
 })
 imageSliderIn.append(picture5);
-
-
-
-
 imageSlider.append(imageSliderIn);
-
 
 imageSlider.append(rightImgSlide);
 
-
 mainDiv.append(imageSlider);
-
 
 
 let rightClick = document.getElementById("rtSlide");
@@ -250,6 +181,11 @@ rightClick.addEventListener("click",function(){
 leftClick.addEventListener("click",function(){
        document.getElementById("slider").scrollLeft -= 180
 })
+
+
+
+
+
 
 
 
@@ -330,4 +266,3 @@ function addtoCart(p) {
         localStorage.setItem("glammBag", JSON.stringify(cart_data));
     }
 }
-</script>
