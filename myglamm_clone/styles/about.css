@@ -1,0 +1,105 @@
+#mainAboutDiv{
+    width: 100%;
+    height: 650px;
+    border: 1px solid black ;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url("https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505123624624-blobid1505123691780.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#mainAboutDiv>button{
+    float: right;
+    margin: 15px;
+    margin-right:10px ;
+    height: 15%;
+    width: 8%;
+    background-color: rgb(245, 241, 241,0.0);
+    border: none;
+    text-align: right;
+    padding: 5px;
+    color: rgb(255, 255, 255,0.6);
+}
+#paragraph1{
+    color: white;
+    width: 400px;
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 100px;
+    display: none;
+}
+#paragraph2{
+    color: white;
+    width: 400px;
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 100px;
+    display: none;
+}
+#paragraph3{
+    color: white;
+    width: 400px;
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 100px;
+    display: none;
+}
+#paragraph4{
+    color: white;
+    width: 400px;
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 100px;
+   display: none;
+}
+
+.inactiveP{
+display: none;
+}
+
+.inactiveEventBtn{
+  border: none;
+}
+.inactiveList{
+   color: rgb(255, 255, 255,0.6);
+}
+.activeMainBackground4{
+  
+
+background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505123624624-blobid1505123691780.jpg');
+
+}
+.activeMainBackground3{
+  
+
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505123709999-blobid1505123775162.jpg');
+    
+    }
+
+.activeMainBackground2{
+  
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505124062574-blobid1505124131185.jpg');
+        
+        }
+
+.activeMainBackground1{
+  
+
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('https://s3-ap-southeast-1.amazonaws.com/myglamm.com/content/file-1505124076895-blobid1505124145750.jpg');
+            
+}
+.activeEventBtn{
+    
+    
+    border:2.5px solid rgb(255,20,147,0.4);
+    z-index: 100;
+}
+.activeP{
+    display: block;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.activeList{
+    color: white;
+}

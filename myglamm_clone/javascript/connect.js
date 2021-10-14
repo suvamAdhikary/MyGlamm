@@ -31,11 +31,22 @@ let bagLink = document.getElementById('bag__link');
 bagLink.href = '../cart.html';
 
 let profile = document.getElementById('profile');
-if(profile.href == `user_tel.html`) {
-    profile.href = `../user_tel.html`;
-} else if (profile.href == `index.html`) {
-    profile.href = `../index.html`;
-}
+
+    let temp = JSON.parse(localStorage.getItem('flag'));
+
+    if (temp == null) {
+        // profile.innerText = 'Signup / Login';
+        profile.href = `../user_tel.html`;
+    } else {
+        // profile.innerText = 'Logout';
+        profile.href = `../index.html`;
+    }
+
+// if(profile.href == `user_tel.html`) {
+//     profile.href = `../user_tel.html`;
+// } else if (profile.href == `index.html`) {
+//     profile.href = `../index.html`;
+// }
 
 let topLeft = document.getElementById('shop__now');
 topLeft.href = '../comingsoon.html';
