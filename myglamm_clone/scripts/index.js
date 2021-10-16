@@ -358,7 +358,8 @@ function showProducts() {
     let div = document.createElement("div");
     div.setAttribute("class", "home__singleProduct--container");
     div.onclick = function () {
-      window.location.assign(`products/${n}.html`);
+      localStorage.setItem("currentProduct", JSON.stringify(product));
+      window.location.assign(`pages/product.html`);
     };
     let p_name = document.createElement("h5");
     p_name.setAttribute("class", "home__product--name");

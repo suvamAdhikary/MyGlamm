@@ -207,12 +207,14 @@ function showBagCount() {
     } else {
         currentCart = JSON.parse(localStorage.getItem('glammBag'))
 
-        let temp = 0;
-        currentCart.forEach(({quantity}) => {
-            temp+=quantity;
-        })
-        if(temp > 0) {
-            count = temp;
+        if(currentCart){
+            let temp = 0;
+            currentCart.forEach(({quantity}) => {
+                temp+=quantity;
+            })
+            if(temp > 0) {
+                count = temp;
+            }
         }
     }
 

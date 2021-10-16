@@ -1,3 +1,29 @@
+Flag = JSON.parse(localStorage.getItem('flag'));
+
+let currentUser;
+
+if (Flag != null) {
+    currentUser = JSON.parse(localStorage.getItem('glammUsers'))
+} else {
+    currentUser = JSON.parse(localStorage.getItem('glammBag'))
+}
+
+let user;
+
+currentUser.forEach((users)=> {
+    if(users.mobile === Flag){
+        user = users;
+    }
+})
+
+let record = {
+    products: null,
+    bill: null,
+    status: null,
+    track: null,
+    time: null,
+}
+
 let finalAmount = JSON.parse(localStorage.getItem('payable'))
 
 let payable = document.getElementById('payment__payable--amount');
@@ -50,6 +76,23 @@ forCard()
 
 let finish = document.getElementById('proceed__btn');
 finish.onclick = function () {
+    let time = Date(Date.now()).toString();
+    
+    record.products = user.cart;
+    record.bill = finalAmount;
+    record.status = "Pait";
+    record.track = "Dispached";
+    record.time = time;
+
+    currentUser.forEach((users)=> {
+        if(users.mobile === Flag){
+            users.order.push(record);
+            users.cart = [];
+        }
+    })
+
+    localStorage.setItem("glammUsers", JSON.stringify(currentUser));
+
     alert("Thank you for shopping!");
     window.location.href = `index.html`;
 }

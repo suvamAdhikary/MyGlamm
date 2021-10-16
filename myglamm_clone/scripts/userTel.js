@@ -49,6 +49,7 @@ function submitTel(e) {
                 wishlist: [],
                 name: "",
                 email: "",
+                order: []
             }
 
 
